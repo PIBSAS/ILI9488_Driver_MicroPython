@@ -1,7 +1,6 @@
-Pins ESP32 S3:
+# Pins ESP32 S3:
 
-SPI principal (FSPI) - SPI_ID=1
-
+- SPI principal (FSPI) - SPI_ID=1
 
 | Nombre normal |	Nombre en tabla	| Pin J3 (No.)	| Pin Name |
 |---------------|-----------------|---------------|----------|
@@ -10,7 +9,7 @@ SPI principal (FSPI) - SPI_ID=1
 | SCK/CLK	      | FSPICLK	        | 18	          | GPIO 12  |
 | MISO/SDO      |	FSPIQ	          | 19	          | GPIO 13  |
 
-Pins 3,5" TFT SPI 480x320 v1.0 ILI9488:
+# Pins 3,5" TFT SPI 480x320 v1.0 ILI9488:
 
 | Nombre normal |	Nombre en tabla	| Pin J3 & J1 (No.)	| Pin Name |
 |---------------|-----------------|-------------------|----------|
