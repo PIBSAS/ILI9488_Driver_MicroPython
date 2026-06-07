@@ -21,3 +21,7 @@
 | CS/SS         |	FSPICS0	        | 16	              | GPIO 10  |
 | GND           | GND             | 1                 | GND      |
 | VCC           | 3V3             | J1 = 1            | 3V3      |
+
+<div>
+  <img src="ESP32-S3_DevKitC-1_pinlayout_v1.1.jpg" alt="ESP32 S3 Pinout">
+</div>
