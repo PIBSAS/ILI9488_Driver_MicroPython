@@ -23,6 +23,22 @@
 | VCC           | 3V3             | J1 = 1            | 3V3      |
 
 
+<style>
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .column {
+    flex: 1;
+  }
+  .column img {
+    width: 100%;
+    height: auto;
+  }
+</style>
+
 <div class="row">
   <div class="column">
     <img src="ESP32-S3_DevKitC-1_pinlayout_v1.1.jpg" alt="ESP32 S3 Pinout" style="width:100%">
