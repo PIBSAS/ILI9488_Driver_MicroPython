@@ -4,15 +4,15 @@ from ili9488 import driver
 SPI_ID = 1
 SPI_BAUDRATE = 40000000
 
-PIN_SCK  = 14
-PIN_MOSI = 15
-PIN_MISO = 12
+PIN_SCK  = 12
+PIN_MOSI = 11
+PIN_MISO = 13 #Optional if you have Touch model
 
-PIN_CS   = 17
+PIN_CS   = 10
 PIN_DC   = 6
 PIN_RST  = 7
 # Backlight (opcional if not 3V3 Pin available)
-PIN_BL   = 23
+#PIN_BL   = # 3V3 available
 
 def setting(rotation=0):
     spi = SPI(
@@ -24,7 +24,7 @@ def setting(rotation=0):
         mosi=Pin(PIN_MOSI),
         miso=Pin(PIN_MISO)
     )
-    Pin(PIN_BL, Pin.OUT, value=1)
+    #Pin(PIN_BL, Pin.OUT, value=1)
     
     display = driver(
         spi,
