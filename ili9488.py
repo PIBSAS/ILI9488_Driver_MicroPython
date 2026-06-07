@@ -326,3 +326,85 @@ class ILI9488:
 
         self.fill_rect(x, y, 1, h, color)          # izquierda
         self.fill_rect(x+w-1, y, 1, h, color)      # derecha
+
+    # --------------------
+
+    def _plot_ellipse_points(self, xc, yc, x, y, color):
+
+        self.pixel(xc + x, yc + y, color)
+        self.pixel(xc - x, yc + y, color)
+        self.pixel(xc + x, yc - y, color)
+        self.pixel(xc - x, yc - y, color)
+
+    # ---------------------
+
+    def ellipse(self, xc, yc, rx, ry, color):
+
+        x = 0
+        y = ry
+
+        rx2 = rx * rx
+        ry2 = ry * ry
+
+        tworx2 = 2 * rx2
+        twory2 = 2 * ry2
+
+        px = 0
+        py = tworx2 * y
+
+        # Región 1
+        p = ry2 - (rx2 * ry) + (rx2 // 4)
+
+        while px < py:
+
+            self._plot_ellipse_points(xc, yc, x, y, color)
+
+            x += 1
+            px += twory2
+
+            if p < 0:
+                p += ry2 + px
+            else:
+                y -= 1
+                py -= tworx2
+                p += ry2 + px - py
+
+        # Región 2
+        p = (
+            ry2 * (x + 0.5) * (x + 0.5)
+            + rx2 * (y - 1) * (y - 1)
+            - rx2 * ry2
+        )
+
+        while y >= 0:
+
+            self._plot_ellipse_points(xc, yc, x, y, color)
+
+            y -= 1
+            py -= tworx2
+
+            if p > 0:
+                p += rx2 - py
+            else:
+                x += 1
+                px += twory2
+                p += rx2 - py + px
+
+    # --------------------
+
+    def fill_ellipse(self, xc, yc, rx, ry, color):
+
+        rx2 = rx * rx
+        ry2 = ry * ry
+
+        for y in range(-ry, ry + 1):
+
+            x = int(rx * (1 - (y*y)/ry2) ** 0.5)
+
+            self.fill_rect(
+                xc - x,
+                yc + y,
+                2*x + 1,
+                1,
+                color
+            )
