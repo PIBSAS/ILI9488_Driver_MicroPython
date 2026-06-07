@@ -22,6 +22,12 @@
 | GND           | GND             | 1                 | GND      |
 | VCC           | 3V3             | J1 = 1            | 3V3      |
 
-<div>
-  <img src="ESP32-S3_DevKitC-1_pinlayout_v1.1.jpg" alt="ESP32 S3 Pinout">
+
+<div class="row">
+  <div class="column">
+    <img src="ESP32-S3_DevKitC-1_pinlayout_v1.1.jpg" alt="ESP32 S3 Pinout" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="35_TFT_SPI_480x320_V1-0.jpg" alt="Display Pinout" style="width:100%">
+  </div>
 </div>
