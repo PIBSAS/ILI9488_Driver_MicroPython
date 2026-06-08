@@ -112,7 +112,8 @@
 ----
 
 <div>
-  <h2>File estructure on microcontroller</h2>
+  <h2>File estructure on the microcontroller</h2>
+</div>
 
 <div>
 <pre>
@@ -151,6 +152,9 @@ lcd.fill(Color.WHITE)
 # Write text on screen
 lcd.text("Luciano's tech", 0, 10, Color.RED, font, Color.PCYAN)
 ````
+
+----
+
 
 <h2>Class Color</h2>
 
