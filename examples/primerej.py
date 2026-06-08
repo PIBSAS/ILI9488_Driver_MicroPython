@@ -1,7 +1,7 @@
 from ili9488 import driver, Color
 import set_display
 from time import sleep
-import vga1_16x16 as font
+import fonts.vga1_16x16 as font
 
 lcd = set_display.setting(2)
 
