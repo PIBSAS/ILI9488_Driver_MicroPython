@@ -18,6 +18,7 @@
 | SCK/CLK	      | FSPICLK	        | 18	              | GPIO 12  |
 | SDI/MOSI/SDA	| FSPID	          | 17	              | GPIO 11  |
 | DC/RS         | ----------------| 6                 | GPIO 6   |
+| RESET         | ----------------| 7                 | GPIO 7   |
 | CS/SS         |	FSPICS0	        | 16	              | GPIO 10  |
 | GND           | GND             | 1                 | GND      |
 | VCC           | 3V3             | J1 = 1            | 3V3      |
