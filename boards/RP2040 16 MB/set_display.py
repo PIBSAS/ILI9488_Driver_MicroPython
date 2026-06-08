@@ -12,7 +12,7 @@ PIN_CS   = 13 # CD
 PIN_DC   = 6 # DC/RS
 PIN_RST  = 7 # RESET
 # Backlight (opcional if not 3V3 Pin available)
-PIN_BL   = 23 #LED
+PIN_BL   = 23 # LED or use 3V3 from debg pins
 
 def setting(rotation=0):
     spi = SPI(
