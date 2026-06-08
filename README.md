@@ -4,6 +4,8 @@
   <img src="boards/ESP32-S3 16MB PSRAM 8MB/35_TFT_SPI_480x320_V1-0.jpg" alt="" target="_blank">
 </div>
 
+----
+
 <div align="center">
   <table>
     <tr>
@@ -107,6 +109,8 @@
   </table>
 </div>
 
+----
+
 <div>
   <h2>File estructure on microcontroller</h2>
 
@@ -123,6 +127,8 @@
 &#x2514;&#x2500;&#x2500; &#x1F4C4;image.bmp (from examples)
 </pre>  
 </div>
+
+----
 
 <div>
   <h2>Basic template code</h2>
@@ -322,3 +328,213 @@ lcd.text("Luciano's tech", 0, 10, Color.RED, font, Color.PCYAN)
     </tr>
   </table>
 </div>
+
+
+----
+
+
+<div>
+  <h2>Functions</h2>
+</div>
+
+<h3>Fill the screen with a color from class Color or hex:</h3>
+
+````python
+fill(color)
+````
+
+
+<h3>Draw a pixel:</h3>
+
+````python
+pixel(x, y, color)
+````
+
+
+<h3>Draw a character:</h3>
+
+````python
+char(x, y, ch, color, font, bg=None, scale=1)
+````
+
+
+<h3>Write text:</h3>
+
+````python
+text(text, x, y, color, font, bg=None, scale=1)
+````
+
+
+<h3>Draw a rectangle:</h3>
+
+````python
+rect(x, y, w, h, color)
+````
+
+
+<h3>Draw a rectangle optimized:</h3>
+
+````python
+fast_rect(x, y, w, h, color)
+````
+
+
+<h3>Draw a solid rectangle:</h3>
+
+````python
+fill_rect(x, y, w, h, color)
+````
+
+
+<h3>Draw an ellipse:</h3>
+
+````python
+ellipse(xc, yc, rx, ry, color)
+````
+
+
+<h3>Draw a solid ellipse:</h3>
+
+````python
+fill_ellipse(xc, yc, rx, ry, color)
+````
+
+
+<h3>Draw a line, horizontal, vertical or diagonal:</h3>
+
+````python
+line(x0, y0, x1, y1, color)
+````
+
+
+<h3>Draw an horizontal line:</h3>
+
+````python
+hline(x, y, length, color)
+````
+
+
+<h3>Draw an horizontal line optimized:</h3>
+
+````python
+fast_hline(x, y, length, color)
+````
+
+
+<h3>Draw a vertical line:</h3>
+
+````python
+vline(x, y, length, color)
+````
+
+
+<h3>Draw a vertical line optimized:</h3>
+
+````python
+fast_vline(x, y, length, color)
+````
+
+
+<h3>Draw a triangle:</h3>
+
+````python
+triangle(x1, y1, x2, y2, x3, y3, color)
+````
+
+
+<h3>Draw a solid triangle:</h3>
+
+````python
+fill_triangle(x1, y1, x2, y2, x3, y3, color):
+````
+
+
+<h3>Draw a polygon given a list of points and color:</h3>
+
+````python
+polygon(points, color)
+````
+
+
+<h3>Draw a solid polygon given a list of points and color:</h3>
+
+````python
+fill_polygon(points, color)
+````
+
+
+<h3>Draw a polygon given a variable list of points and color:</h3>
+
+````python
+var_polygon(*points, color)
+````
+
+
+<h3>Draw a regular polygon with angle rotation:</h3>
+
+````python
+regular_polygon(xc, yc, radius, sides, color, rotation=0)
+````
+
+
+<h3>Draw a solid regular polygon with angle rotation:</h3>
+
+````python
+fill_regular_polygon(xc, yc, radius, sides, color, rotation=0)
+````
+
+
+<h3>Draw a circle:</h3>
+
+````python
+circle(xc, yc, radius, color)
+````
+
+
+<h3>Draw a solid circle:</h3>
+
+````python
+fill_circle(xc, yc, radius, color)
+````
+
+
+<h3>Draw image buffer at x,y position:</h3>
+
+````python
+blit_buffer(buffer, x, y, width, height)
+````
+
+
+<h3>Show BMP image 1:1 :</h3>
+
+````python
+show_bmp(filename, x=0, y=0)
+````
+
+
+<h3>Show BMP image fitting on display:</h3>
+
+````python
+show_bmp_fit(filename)
+````
+
+
+<h3>Show BMP image stretching on display:</h3>
+
+````python
+show_bmp_stretch(filename)
+````
+
+
+<h3>Show BMP image choosing mode: None= 1:1, "fit", "stretch":</h3>
+
+````python
+bmp(filename, x=0, y=0, mode=None)
+````
+
+
+<h3>Select rgb color 565:</h3>
+
+````python
+Color.rgb(r, g, b)
+````
