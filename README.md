@@ -148,6 +148,8 @@ lcd.text("Luciano's tech", 0, 10, Color.RED, font, Color.PCYAN)
 
 <h2>Class Color</h2>
 
+<p>See the next table on the web <a href="https://pibsas.github.io/ILI9488_Driver_MicroPython/" target="_blank">README</a> version</p>
+
 <div align="center">
   <table style="background-color:#F0F0F0;">
     <tr>
@@ -164,19 +166,49 @@ lcd.text("Luciano's tech", 0, 10, Color.RED, font, Color.PCYAN)
       <td style="background-color:#000000; width:40px; height:20px;"></td>
     </tr>
     <tr>
-      <td>NAVY</td>
-      <td>0x000F</td>
-      <td style="background-color:#00007B; width:40px; height:20px;"></td>
+      <td>WHITE</td>
+      <td>0xFFFF</td>
+      <td style="background-color:#ffffff; width:40px; height:20px;"></td>
     </tr>
     <tr>
-      <td>DARKGREEN</td>
-      <td>0x03E0</td>
-      <td style="background-color:#007d00; width:40px; height:20px;"></td>
+      <td>RED</td>
+      <td>0xF800</td>
+      <td style="background-color:#ff0000; width:40px; height:20px;"></td>
     </tr>
     <tr>
-      <td>DARKCYAN</td>
-      <td>0x03EF</td>
-      <td style="background-color:#007d7b; width:40px; height:20px;"></td>
+      <td>BLUE</td>
+      <td>0x001F</td>
+      <td style="background-color:#0000ff; width:40px; height:20px;"></td>
+    </tr>
+    <tr>
+      <td>GREEN</td>
+      <td>0x07E0</td>
+      <td style="background-color:#00ff00; width:40px; height:20px;"></td>
+    </tr>
+    <tr>
+      <td>CYAN</td>
+      <td>0x07FF</td>
+      <td style="background-color:#00ffff; width:40px; height:20px;"></td>
+    </tr>
+    <tr>
+      <td>MAGENTA</td>
+      <td>0xF81F</td>
+      <td style="background-color:#ff00ff; width:40px; height:20px;"></td>
+    </tr>
+    <tr>
+      <td>YELLOW</td>
+      <td>0xFFE0</td>
+      <td style="background-color:#ffff00; width:40px; height:20px;"></td>
+    </tr>
+    <tr>
+      <td>ORANGE</td>
+      <td>0xFD20</td>
+      <td style="background-color:#ffa600; width:40px; height:20px;"></td>
+    </tr>
+    <tr>
+      <td>PINK</td>
+      <td>0xFE3F</td>
+      <td style="background-color:#ffc6ff; width:40px; height:20px;"></td>
     </tr>
     <tr>
       <td>MAROON</td>
@@ -194,9 +226,19 @@ lcd.text("Luciano's tech", 0, 10, Color.RED, font, Color.PCYAN)
       <td style="background-color:#7b7d00; width:40px; height:20px;"></td>
     </tr>
     <tr>
-      <td>LIGHTGREY</td>
-      <td>0xC618</td>
-      <td style="background-color:#c5c2c5; width:40px; height:20px;"></td>
+      <td>GREENYELLOW</td>
+      <td>0xAFE5</td>
+      <td style="background-color:#adff29; width:40px; height:20px;"></td>
+    </tr>
+    <tr>
+      <td>DARKGREEN</td>
+      <td>0x03E0</td>
+      <td style="background-color:#007d00; width:40px; height:20px;"></td>
+    </tr>
+    <tr>
+      <td>DARKCYAN</td>
+      <td>0x03EF</td>
+      <td style="background-color:#007d7b; width:40px; height:20px;"></td>
     </tr>
     <tr>
       <td>DARKGREY</td>
@@ -204,79 +246,79 @@ lcd.text("Luciano's tech", 0, 10, Color.RED, font, Color.PCYAN)
       <td style="background-color:#7b7d7b; width:40px; height:20px;"></td>
     </tr>
     <tr>
-      <td></td>
-      <td>0x0000</td>
+      <td>LIGHTGREY</td>
+      <td>0xC618</td>
+      <td style="background-color:#c5c2c5; width:40px; height:20px;"></td>
+    </tr>
+    <tr>
+      <td>PRED</td>
+      <td>0xFD75</td>
+      <td style="background-color:#ffaead; width:40px; height:20px;"></td>
+    </tr>
+    <tr>
+      <td>PORANGE</td>
+      <td>0xFEB4</td>
+      <td style="background-color:#ffd7a5; width:40px; height:20px;"></td>
+    </tr>
+    <tr>
+      <td>PGREEN</td>
+      <td>0xCFF7</td>
+      <td style="background-color:#ceffbd; width:40px; height:20px;"></td>
+    </tr>
+    <tr>
+      <td>PYELLOW</td>
+      <td>0xFFF6</td>
+      <td style="background-color:#ffffb5; width:40px; height:20px;"></td>
+    </tr>
+    <tr>
+      <td>PCYAN</td>
+      <td>0x9FBF</td>
+      <td style="background-color:#9cf7ff; width:40px; height:20px;"></td>
+    </tr>
+    <tr>
+      <td>PBLUE</td>
+      <td>0x9E1F</td>
+      <td style="background-color:#9cc2ff; width:40px; height:20px;"></td>
+    </tr>
+    <tr>
+      <td>PPURPLE</td>
+      <td>0xBD9F</td>
+      <td style="background-color:#bdb2ff; width:40px; height:20px;"></td>
+    </tr>
+    <tr>
+      <td>TRED</td>
+      <td>0xD945</td>
+      <td style="background-color:#de2829; width:40px; height:20px;"></td>
+    </tr>
+    <tr>
+      <td>TORANGE</td>
+      <td>0xF384</td>
+      <td style="background-color:#f77121; width:40px; height:20px;"></td>
+    </tr>
+    <tr>
+      <td>TYELLOW</td>
+      <td>0xF643</td>
+      <td style="background-color:#f7ca19; width:40px; height:20px;"></td>
+    </tr>
+    <tr>
+      <td>TGREEN</td>
+      <td>0x7568</td>
+      <td style="background-color:#73ae42; width:40px; height:20px;"></td>
+    </tr>
+    <tr>
+      <td>TDARKGREEN</td>
+      <td>0x03E9</td>
+      <td style="background-color:#007d4a; width:40px; height:20px;"></td>
+    </tr>
+    <tr>
+      <td>ALL</td>
+      <td>A list with all constants</td>
       <td style="background-color:#000000; width:40px; height:20px;"></td>
     </tr>
     <tr>
-      <td>NAVY</td>
-      <td>0x000F</td>
-      <td style="background-color:#00007B; width:40px; height:20px;"></td>
-    </tr>
-    <tr>
-      <td>NAVY</td>
-      <td>0x000F</td>
-      <td style="background-color:#00007B; width:40px; height:20px;"></td>
-    </tr>
-    <tr>
-      <td>NAVY</td>
-      <td>0x000F</td>
-      <td style="background-color:#00007B; width:40px; height:20px;"></td>
-    </tr>
-    <tr>
-      <td>NAVY</td>
-      <td>0x000F</td>
-      <td style="background-color:#00007B; width:40px; height:20px;"></td>
-    </tr>
-    <tr>
-      <td>NAVY</td>
-      <td>0x000F</td>
-      <td style="background-color:#00007B; width:40px; height:20px;"></td>
-    </tr>
-    <tr>
-      <td>NAVY</td>
-      <td>0x000F</td>
-      <td style="background-color:#00007B; width:40px; height:20px;"></td>
-    </tr>
-    <tr>
-      <td>NAVY</td>
-      <td>0x000F</td>
-      <td style="background-color:#00007B; width:40px; height:20px;"></td>
-    </tr>
-    <tr>
-      <td>NAVY</td>
-      <td>0x000F</td>
-      <td style="background-color:#00007B; width:40px; height:20px;"></td>
-    </tr>
-    <tr>
-      <td>NAVY</td>
-      <td>0x000F</td>
-      <td style="background-color:#00007B; width:40px; height:20px;"></td>
-    </tr>
-    <tr>
-      <td>NAVY</td>
-      <td>0x000F</td>
-      <td style="background-color:#00007B; width:40px; height:20px;"></td>
-    </tr>
-    <tr>
-      <td>NAVY</td>
-      <td>0x000F</td>
-      <td style="background-color:#00007B; width:40px; height:20px;"></td>
-    </tr>
-    <tr>
-      <td>NAVY</td>
-      <td>0x000F</td>
-      <td style="background-color:#00007B; width:40px; height:20px;"></td>
-    </tr>
-    <tr>
-      <td>NAVY</td>
-      <td>0x000F</td>
-      <td style="background-color:#00007B; width:40px; height:20px;"></td>
+      <td>rgb(red 5 bit,green 6 bit,blue 5 bits)</td>
+      <td>Color.rgb(255,34,124)</td>
+      <td style="background-color:#ff8aff; width:40px; height:20px;"></td>
     </tr>
   </table>
 </div>
-
-| Column 1                              | Column 2                              | Column 3                              |
-|----------------------------------------|----------------------------------------|----------------------------------------|
-| Normal cell                            | <span style="background-color:yellow">Yellow cell</span> | Normal cell                            |
-| <span style="background-color:lightblue">Light blue cell</span> | Normal cell                            | <span style="background-color:pink">Pink cell</span> |
