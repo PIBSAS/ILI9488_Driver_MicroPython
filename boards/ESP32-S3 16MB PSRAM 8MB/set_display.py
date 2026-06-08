@@ -2,7 +2,7 @@ from machine import SPI, Pin
 from ili9488 import driver
 
 SPI_ID = 1
-SPI_BAUDRATE = 60000000 # MAX 60Mhz
+SPI_BAUDRATE = 40000000 # MAX 60Mhz
 
 PIN_SCK  = 12
 PIN_MOSI = 11
