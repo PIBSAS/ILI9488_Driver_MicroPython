@@ -1,4 +1,4 @@
-# Pins ESP32 S3:
+# Pins ESP32 S3 16MB PSRAM 8MB:
 
 - SPI principal (FSPI) - SPI_ID=1
 
