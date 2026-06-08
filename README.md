@@ -275,3 +275,8 @@ lcd.text("Luciano's tech", 0, 10, Color.RED, font, Color.PCYAN)
     </tr>
   </table>
 </div>
+
+| Column 1                              | Column 2                              | Column 3                              |
+|----------------------------------------|----------------------------------------|----------------------------------------|
+| Normal cell                            | <span style="background-color:yellow">Yellow cell</span> | Normal cell                            |
+| <span style="background-color:lightblue">Light blue cell</span> | Normal cell                            | <span style="background-color:pink">Pink cell</span> |
