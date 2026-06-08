@@ -4,7 +4,7 @@
 
 | Nombre normal |	Nombre en tabla	| Pin (No.)	    | Pin Name |
 |---------------|-----------------|---------------|----------|
-| CS/SS         |	SPI0 CSn        | 17	          | GPIO 17  |
+| CS/SS         |	SPI0 CSn        | 17	          | GPIO 13  |
 | MOSI/SDA/SDI	| SPI1 TX         | 20	          | GPIO 15  |
 | SCK/CLK	      | SPI1 SCK        | 19	          | GPIO 14  |
 | MISO/SDO      |	SPI1 RX	        | 16	          | GPIO 12  |
@@ -19,7 +19,7 @@
 | SDI/MOSI/SDA	| SPI1 TX         | 20	              | GPIO 15  |
 | DC/RS         | --------------- | 6                 | GPIO 6   |
 | RESET         | --------------- | 7                 | GPIO 7   |
-| CS/SS         |	SPI0 CSn        | 17	              | GPIO 17  |
+| CS/SS         |	SPI0 CSn        | 17	              | GPIO 13  |
 | GND           | GND             | 3                 | GND      |
 | VCC           | 3V3             | 36                | 3V3      |
 
