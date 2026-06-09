@@ -4,6 +4,13 @@
   <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/Waveshare%20ESP32-C3%20Zero/ESP32-C3-Zero.webp">
 </div>
 
+<div align="center">
+  <ul>
+  <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/Waveshare%20ESP32-C3%20Zero/esp32-c3_datasheet_en.pdf" target="_blank">ESP32 C3 Datasheet</a><br>
+  <a href="https://docs.waveshare.com/ESP32-C3-Zero" target="_blank">Waveshare ESP32-C3 Zero Wiki</a>
+  </ul>
+</div>
+
 ----
 
 
