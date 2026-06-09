@@ -1,6 +1,15 @@
-# Pins Wavshare ESP32-C3 Zero:
+# Pins Waveshare ESP32-C3 Zero:
 
-- SPI principal (FSPI) - SPI_ID=1
+<div align="center">
+  <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/Waveshare%20ESP32-C3%20Zero/ESP32-C3-Zero.webp">
+</div>
+
+----
+
+
+- SPI principal (`FSPI`) - `SPI_ID=1`
+
+----
 
 | Nombre normal |	Nombre en tabla	| Pin (No.)    	| Pin Name |
 |---------------|-----------------|---------------|----------|
@@ -8,6 +17,8 @@
 | MOSI/SDA/SDI	| FSPID	          | 13 	          | GPIO 9   |
 | SCK/CLK	      | FSPICLK	        | 12 	          | GPIO 8   |
 | MISO/SDO      |	FSPIQ	          | 9	            | GPIO 5   |
+
+----
 
 # Pins 3,5" TFT SPI 480x320 v1.0 ILI9488:
 
@@ -23,6 +34,7 @@
 | GND           | GND             | 2                 | GND      |
 | VCC           | 3V3             | 3                 | 3V3 (OUT)|
 
+----
 
 <div align="center">
   <table>
