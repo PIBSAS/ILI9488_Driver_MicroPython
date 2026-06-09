@@ -1,7 +1,7 @@
 # ESP32-WROOM-32D Pinout:
 
 <div align="center">
-  <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-WROOM-32D/esp32-wroom-32d.png">
+  <img src="esp32-wroom-32d.png" alt="ESP32 WROOM 32D">
 </div>
 
 <div align="center">
