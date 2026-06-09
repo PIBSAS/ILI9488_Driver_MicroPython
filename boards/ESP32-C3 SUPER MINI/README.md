@@ -1,7 +1,7 @@
 # ESP32-C3 SUPER MINI Pinout:
 
 <div align="center">
-  <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-C3%20SUPER%20MINI/esp32-c3%20super%20mini.png">  
+  <img src="esp32-c3 super mini.png">  
 </div>
 
 <div align="center">
