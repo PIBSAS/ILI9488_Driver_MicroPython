@@ -1,6 +1,6 @@
 # Pins Raspberry Pi Pico W:
 
-<div align="center">
+<div align="right">
   <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/Raspberry%20Pi%20Pico%20W/picow.png">
 </div>
 
