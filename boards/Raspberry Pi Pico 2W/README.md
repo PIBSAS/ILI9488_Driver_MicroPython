@@ -1,7 +1,7 @@
 # Pins Raspberry Pi Pico 2W:
 
 <div align="center">
-  <img src="">
+  <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/Raspberry%20Pi%20Pico%202W/pico2w.png">
 </div>
 
 ----
