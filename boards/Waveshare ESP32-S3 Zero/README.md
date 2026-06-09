@@ -4,6 +4,13 @@
   <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/Waveshare%20ESP32-S3%20Zero/ESP32-S3-Zero.webp">
 </div>
 
+<div align="center">
+  <ul>
+  <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/Waveshare%20ESP32-S3%20Zero/esp32-s3_datasheet_en.pdf" target="_blank">ESP32 S3 Datasheet</a><br>
+  <a href="https://docs.waveshare.com/ESP32-S3-Zero" target="_blank">Waveshare ESP32-S3 Zero Wiki</a>
+  </ul>
+</div>
+
 ----
 
 - SPI principal (`FSPI`) - `SPI_ID=1`
