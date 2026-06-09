@@ -4,6 +4,13 @@
   <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/Raspberry%20Pi%20Pico%20W/picow.png">
 </div>
 
+<div align="center">
+  <ul>
+  <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-C3%20SUPER%20MINI/esp32-c3_datasheet_en.pdf">Raspberry Pi Pico W Datasheet</a><br>
+  <a href="https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#wireless_pico">Raspberry Pi Pico W</a>
+  </ul>
+</div>
+
 ----
 
 - SPI principal (`FSPI`) - `SPI_ID=1`
