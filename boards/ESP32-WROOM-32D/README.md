@@ -6,8 +6,8 @@
 
 <div align="center">
   <ul>
-  <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-C3%20SUPER%20MINI/esp32-c3_datasheet_en.pdf">ESP32-WROOM-32D Datasheet</a><br>
-  <a href="https://wiki.nologo.tech/en/product/esp32/esp32c3SuperMini/esp32C3SuperMini.html">ESP32-WROOM-32D Docs</a>
+  <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-WROOM-32D/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" target="_blank">ESP32-WROOM-32D Datasheet</a><br>
+  <a href="https://documentation.espressif.com/esp-dev-kits/en/latest/esp32/esp32-devkitc/user_guide.html" target="_blank">ESP32-WROOM-32D Docs</a>
   </ul>
 </div>
 
