@@ -1,6 +1,14 @@
 # Pins Waveshare ESP32-S3 Zero:
 
-- SPI principal (FSPI) - SPI_ID=1
+<div align="center">
+  <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/Waveshare%20ESP32-S3%20Zero/ESP32-S3-Zero.webp">
+</div>
+
+----
+
+- SPI principal (`FSPI`) - `SPI_ID=1`
+
+----
 
 | Nombre normal |	Nombre en tabla	| Pin J3 (No.)	| Pin Name |
 |---------------|-----------------|---------------|----------|
@@ -8,6 +16,8 @@
 | MOSI/SDA/SDI	| FSPID	          | 14	          | GPIO 11  |
 | SCK/CLK	      | FSPICLK	        | 15	          | GPIO 12  |
 | MISO/SDO      |	FSPIQ	          | 16	          | GPIO 13  |
+
+----
 
 # Pins 3,5" TFT SPI 480x320 v1.0 ILI9488:
 
@@ -23,6 +33,7 @@
 | GND           | GND             | 2                 | GND      |
 | VCC           | 3V3             | 3                 | 3V3(OUT) |
 
+----
 
 <div align="center">
   <table>
