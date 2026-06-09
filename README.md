@@ -556,7 +556,7 @@ Color.rgb(r, g, b)
 <li><a href="boards/RP2040 16 MB" target="_blank">RP2040 16 MB</a></li>
 <li><a href="boards/Waveshare ESP32-C3 Zero" target="_blank">Waveshare ESP32-C3 Zero</a></li>
 <li><a href="boards/Waveshare ESP32-S3 Zero" target="_blank">Waveshare ESP32-S3 Zero</a></li>
-<li><a href="boards" target="_blank">Boards files</a></li>
+<li><a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/tree/main/boards" target="_blank">Boards files</a></li>
 </ul>
 
 ----
