@@ -4,7 +4,7 @@
   <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/Raspberry%20Pi%20Pico/pico.png">
 </div>
 
-<div align="center">
+<div align="right">
   <ul>
   <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/Raspberry%20Pi%20Pico/pico-datasheet.pdf" target="_blank">Raspberry Pi Pico Datasheet</a><br>
   <a href="https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#pico1" target="_blank">Raspberry Pi Pico Docs</a>
