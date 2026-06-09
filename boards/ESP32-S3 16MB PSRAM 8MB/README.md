@@ -1,7 +1,7 @@
 # Pins ESP32 S3 16MB PSRAM 8MB:
 
 <div align="center">
-  <img src="">
+  <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-S3%2016MB%20PSRAM%208MB/ESP32-S3-16MB-PSRAM-8MB.png">
 </div>
 
 ----
