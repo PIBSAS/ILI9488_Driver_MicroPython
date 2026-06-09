@@ -1,6 +1,14 @@
 # Pins YD-RP2040 16MB:
 
-- SPI principal - SPI_ID=1
+<div align="center">
+  <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/Waveshare%20ESP32-S3%20Zero/ESP32-S3-Zero.webp">
+</div>
+
+----
+
+- SPI principal (`FSPI`) - `SPI_ID=1`
+
+----
 
 | Nombre normal |	Nombre en tabla	| Pin (No.)	    | Pin Name |
 |---------------|-----------------|---------------|----------|
@@ -8,6 +16,8 @@
 | MOSI/SDA/SDI	| SPI1 TX         | 20	          | GPIO 15  |
 | SCK/CLK	      | SPI1 SCK        | 19	          | GPIO 14  |
 | MISO/SDO      |	SPI1 RX	        | 16	          | GPIO 12  |
+
+----
 
 # Pins 3,5" TFT SPI 480x320 v1.0 ILI9488:
 
@@ -23,6 +33,7 @@
 | GND           | GND             | 3                 | GND      |
 | VCC           | 3V3             | 36                | 3V3      |
 
+----
 
 <div align="center">
   <table>
