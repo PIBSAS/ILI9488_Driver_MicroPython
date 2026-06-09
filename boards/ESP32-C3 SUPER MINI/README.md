@@ -1,0 +1,34 @@
+# Pins ESP32-C3 SUPER MINI:
+
+- SPI principal (FSPI) - SPI_ID=1
+
+| Nombre normal |	Nombre en tabla	| Pin (No.)    	| Pin Name |
+|---------------|-----------------|---------------|----------|
+| CS/SS         |	FSPICS0	        | 3 	          | GPIO 7   |
+| MOSI/SDA/SDI	| FSPID	          | 2 	          | GPIO 6   |
+| SCK/CLK	      | FSPICLK	        | 13	          | GPIO 4   |
+| MISO/SDO      |	FSPIQ	          | 1	            | GPIO 5   |
+
+# Pins 3,5" TFT SPI 480x320 v1.0 ILI9488:
+
+| Nombre normal |	Nombre en tabla	| Pin (No.)       	| Pin Name |
+|---------------|-----------------|-------------------|----------|
+| MISO/SD0      |	FSPIQ	          | 1 	              | GPIO 13  |
+| LED           | ----------------| 6                 | GPIO 10  |
+| SCK/CLK	      | FSPICLK	        | 13	              | GPIO 4   |
+| SDI/MOSI/SDA	| FSPID	          | 2 	              | GPIO 6   |
+| DC/RS         | ----------------| 12                | GPIO 3   |
+| RESET         | ----------------| 11                | GPIO 2   |
+| CS/SS         |	FSPICS0	        | 3 	              | GPIO 7   |
+| GND           | GND             | 15                | GND      |
+| VCC           | 3V3             | 14                | 3V3      |
+
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><img src="ESP32-C3 SUPER MINI-Pinout.png" width="100%"></td>
+      <td align="center"><img src="../ESP32-S3 16MB PSRAM 8MB/35_TFT_SPI_480x320_V1-0.jpg" width="100%"></td>
+    </tr>
+  </table>
+</div>
