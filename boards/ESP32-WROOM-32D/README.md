@@ -1,4 +1,4 @@
-# Pins ESP32-WROOM-32D:
+# ESP32-WROOM-32D Pinout:
 
 <div align="center">
   <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-WROOM-32D/esp32-wroom-32d.png">
@@ -26,7 +26,7 @@
 
 ----
 
-# Pins 3,5" TFT SPI 480x320 v1.0 ILI9488:
+# 3,5" TFT SPI 480x320 v1.0 ILI9488 Pinout:
 
 | Nombre normal |	Nombre en tabla	| Pin (No.)	        | Pin Name |
 |---------------|-----------------|-------------------|----------|
