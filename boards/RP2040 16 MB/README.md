@@ -6,7 +6,8 @@
 
 <div align="center">
   <ul>
-  <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/RP2040%2016%20MB/rp2040-datasheet.pdf" target="_blank">RP2040 Datasheet</a><br>
+    <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/RP2040%2016%20MB/rp2040-datasheet.pdf" target="_blank">RP2040 Datasheet</a>
+    <br>
   </ul>
 </div>
 
