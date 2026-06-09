@@ -560,3 +560,34 @@ Color.rgb(r, g, b)
 </ul>
 
 ----
+
+<h2>Display's manual</h2>
+
+<div>
+<a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/docs/3.5inch_SPI_Module_MSP3520_User_Manual_EN.pdf" target="_blank" rel="noopener noreferrer">
+<img src="docs/3.5inch_SPI_Module_MSP3520_User_Manual_EN.webp">
+</a>
+</div>
+
+----
+
+<h2>Display's schematics</h2>
+
+<div>
+<a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/docs/3-5%20TFT%20SPI%20480x320%20V1-0%20Schematics.pdf" target="_blank" rel="noopener noreferrer">
+<img src="docs/3-5 TFT SPI 480x320 V1-0 Schematics.webp" alt="Schematics">
+</a>
+</div>
+
+----
+
+<h2>ILI9488 Datasheet:</h2>
+
+<div>
+<a href="blob:https://github.com/f9bdcb31-0b26-48d4-a785-021d0f451256" target="_blank" rel="noopener noreferrer">
+<img src="docs/ILI9488 Data Sheet.webp" alt="Datasheet">
+</a>
+</div>
+
+----
+
