@@ -1,6 +1,14 @@
 # Pins Raspberry Pi Pico 2:
 
-- SPI principal - SPI_ID=1
+<div align="center">
+  <img src="">
+</div>
+
+----
+
+- SPI principal (`FSPI`) - `SPI_ID=1`
+
+----
 
 | Nombre normal |	Nombre en tabla	| Pin (No.)	    | Pin Name |
 |---------------|-----------------|---------------|----------|
@@ -8,6 +16,8 @@
 | MOSI/SDA/SDI	| SPI1 TX         | 20	          | GPIO 15  |
 | SCK/CLK	      | SPI1 SCK        | 19	          | GPIO 14  |
 | MISO/SDO      |	SPI1 RX	        | 16	          | GPIO 12  |
+
+----
 
 # Pins 3,5" TFT SPI 480x320 v1.0 ILI9488:
 
@@ -23,6 +33,7 @@
 | GND           | GND             | 18                | GND      |
 | VCC           | 3V3             | 36                | 3V3 (OUT)|
 
+----
 
 <div align="center">
   <table>
