@@ -6,8 +6,9 @@
 
 <div align="center">
   <ul>
-  <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-WROOM-32D/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" target="_blank">ESP32-WROOM-32D Datasheet</a><br>
-  <a href="https://documentation.espressif.com/esp-dev-kits/en/latest/esp32/esp32-devkitc/user_guide.html" target="_blank">ESP32-WROOM-32D Docs</a>
+    <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-WROOM-32D/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" target="_blank">ESP32-WROOM-32D Datasheet</a>
+    <br>
+    <a href="https://documentation.espressif.com/esp-dev-kits/en/latest/esp32/esp32-devkitc/user_guide.html" target="_blank">ESP32-WROOM-32D Docs</a>
   </ul>
 </div>
 
@@ -45,8 +46,16 @@
 <div align="center">
   <table>
     <tr>
-      <td align="center"><a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-WROOM-32D/esp32_devkitC_v4_pinlayout.png" target="_blank"><img src="esp32_devkitC_v4_pinlayout.png" width="100%"></td>
-      <td align="center"><a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-S3%2016MB%20PSRAM%208MB/35_TFT_SPI_480x320_V1-0.jpg" target="_blank" rel="noopener noreferrer"></a><img src="../ESP32-S3 16MB PSRAM 8MB/35_TFT_SPI_480x320_V1-0.jpg" width="100%"></td>
+      <td>
+        <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-WROOM-32D/esp32_devkitC_v4_pinlayout.png" target="_blank">
+          <img src="esp32_devkitC_v4_pinlayout.png" width="100%">
+        </a>
+      </td>
+      <td>
+        <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-S3%2016MB%20PSRAM%208MB/35_TFT_SPI_480x320_V1-0.jpg" target="_blank">
+          <img src="../ESP32-S3 16MB PSRAM 8MB/35_TFT_SPI_480x320_V1-0.jpg" width="100%">
+        </a>
+      </td>
     </tr>
   </table>
 </div>
