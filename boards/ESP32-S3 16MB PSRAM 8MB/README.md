@@ -1,7 +1,14 @@
-# Pins ESP32 S3 16MB PSRAM 8MB:
+# Pins ESP32 S3 WRROM-1 16MB PSRAM 8MB:
 
 <div align="center">
   <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-S3%2016MB%20PSRAM%208MB/ESP32-S3-16MB-PSRAM-8MB.png">
+</div>
+
+<div align="center">
+  <ul>
+  <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-S3%2016MB%20PSRAM%208MB/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf">ESP32 S3 WROOM-1 Datasheet</a><br>
+  <a href="https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/index.html">ESP32 S3 WROOM-1 docs</a>
+  </ul>
 </div>
 
 ----
