@@ -1,6 +1,6 @@
 # Raspberry Pi Pico W Pinout:
 
-<div align="right">
+<div align="center">
   <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/Raspberry%20Pi%20Pico%20W/picow.png">
 </div>
 
