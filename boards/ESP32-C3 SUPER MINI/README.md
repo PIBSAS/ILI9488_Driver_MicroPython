@@ -4,7 +4,7 @@
   <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-C3%20SUPER%20MINI/esp32-c3%20super%20mini.png">  
 </div>
 
-<div>
+<div align="center">
   <ul>
   <li><a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-C3%20SUPER%20MINI/esp32-c3_datasheet_en.pdf">ESP32 C3 Datasheet</a></li>
   <li><a href="https://wiki.nologo.tech/en/product/esp32/esp32c3SuperMini/esp32C3SuperMini.html">NoLogo ESP32-C3 Super Mini Wiki</a></li>
