@@ -135,8 +135,6 @@
   <h2>Basic template code</h2>
 </div>
 
-</div>
-
 
 ````python
 from ili9488 import driver, Color # Class driver and Color
@@ -542,3 +540,22 @@ bmp(filename, x=0, y=0, mode=None)
 ````python
 Color.rgb(r, g, b)
 ````
+
+----
+
+<h2>Boards settings:</h2>
+
+<ul>
+<li><a href="boards/ESP32-C3 SUPER MINI" target="_blank">ESP32-C3 SUPER MINI</a></li>
+<li><a href="boards/ESP32-S3 16MB PSRAM 8MB" target="_blank">ESP32-S3 16MB PSRAM 8MB</a></li>
+<li><a href="boards/ESP32-WROOM-32D" target="_blank">ESP32-WROOM-32D</a></li>
+<li><a href="boards/Raspberry Pi Pico" target="_blank">Raspberry Pi Pico</a></li>
+<li><a href="boards/Raspberry Pi Pico W" target="_blank">Raspberry Pi Pico W</a></li>
+<li><a href="boards/Raspberry Pi Pico 2" target="_blank">Raspberry Pi Pico 2</a></li>
+<li><a href="boards/Raspberry Pi Pico 2W" target="_blank">Raspberry Pi Pico 2W</a></li>
+<li><a href="boards/RP2040 16 MB" target="_blank">RP2040 16 MB</a></li>
+<li><a href="boards/Waveshare ESP32-C3 Zero" target="_blank">Waveshare ESP32-C3 Zero</a></li>
+<li><a href="boards/Waveshare ESP32-S3 Zero" target="_blank">Waveshare ESP32-S3 Zero</a></li>
+</ul>
+
+----
