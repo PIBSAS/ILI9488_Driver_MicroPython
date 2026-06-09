@@ -6,8 +6,8 @@
 
 <div align="center">
   <ul>
-  <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-C3%20SUPER%20MINI/esp32-c3_datasheet_en.pdf">RP2040 Datasheet</a><br>
-  <a href="https://wiki.nologo.tech/en/product/esp32/esp32c3SuperMini/esp32C3SuperMini.html">Raspberry Pi Pico</a>
+  <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/Raspberry%20Pi%20Pico/pico-datasheet.pdf" target="_blank">Raspberry Pi Pico Datasheet</a><br>
+  <a href="https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#pico1" target="_blank">Raspberry Pi Pico Docs</a>
   </ul>
 </div>
 
