@@ -4,6 +4,13 @@
   <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/Raspberry%20Pi%20Pico%202W/pico2w.png">
 </div>
 
+<div align="center">
+  <ul>
+  <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-C3%20SUPER%20MINI/esp32-c3_datasheet_en.pdf">RP2350 Datasheet</a><br>
+  <a href="https://wiki.nologo.tech/en/product/esp32/esp32c3SuperMini/esp32C3SuperMini.html">Raspberry Pi Pico 2W</a>
+  </ul>
+</div>
+
 ----
 
 - SPI principal (`FSPI`) - `SPI_ID=1`
