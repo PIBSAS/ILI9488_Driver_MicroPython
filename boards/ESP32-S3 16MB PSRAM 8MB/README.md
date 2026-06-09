@@ -1,4 +1,4 @@
-# Pins ESP32 S3 WRROM-1 16MB PSRAM 8MB:
+# ESP32 S3 WRROM-1 16MB PSRAM 8MB Pinout:
 
 <div align="center">
   <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-S3%2016MB%20PSRAM%208MB/ESP32-S3-16MB-PSRAM-8MB.png">
@@ -26,7 +26,7 @@
 
 ----
 
-# Pins 3,5" TFT SPI 480x320 v1.0 ILI9488:
+# 3,5" TFT SPI 480x320 v1.0 ILI9488 Pinout:
 
 | Nombre normal |	Nombre en tabla	| Pin J3 & J1 (No.)	| Pin Name |
 |---------------|-----------------|-------------------|----------|
