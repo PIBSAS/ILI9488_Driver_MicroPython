@@ -1,4 +1,4 @@
-# Pins YD-RP2040 16MB:
+# YD-RP2040 16MB Pinout:
 
 <div align="center">
   <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/RP2040%2016%20MB/YD-RP2040%2016MB.png">
@@ -25,7 +25,7 @@
 
 ----
 
-# Pins 3,5" TFT SPI 480x320 v1.0 ILI9488:
+# 3,5" TFT SPI 480x320 v1.0 ILI9488 Pinout:
 
 | Nombre normal |	Nombre en tabla	| Pin (No.)       	| Pin Name |
 |---------------|-----------------|-------------------|----------|
