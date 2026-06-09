@@ -1,13 +1,14 @@
 # Raspberry Pi Pico 2 Pinout:
 
 <div align="center">
-  <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/Raspberry%20Pi%20Pico%202/pico2.png">
+  <img src="pico2.png">
 </div>
 
 <div align="center">
   <ul>
-  <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/Raspberry%20Pi%20Pico%202/pico-2-datasheet.pdf" target="_blank">Raspberry Pi Pico 2 Datasheet</a><br>
-  <a href="https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#pico2" target="_blank">Raspberry Pi Pico 2 Docs</a>
+    <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/Raspberry%20Pi%20Pico%202/pico-2-datasheet.pdf" target="_blank">Raspberry Pi Pico 2 Datasheet</a>
+    <br>
+    <a href="https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#pico2" target="_blank">Raspberry Pi Pico 2 Docs</a>
   </ul>
 </div>
 
@@ -45,8 +46,16 @@
 <div align="center">
   <table>
     <tr>
-      <td align="center"><a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/Raspberry%20Pi%20Pico%202/pico2-pinout.png" target="_blank"><img src="pico2-pinout.png" width="100%"></td>
-      <td align="center"><a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-S3%2016MB%20PSRAM%208MB/35_TFT_SPI_480x320_V1-0.jpg" target="_blank"></a><img src="../ESP32-S3 16MB PSRAM 8MB/35_TFT_SPI_480x320_V1-0.jpg" width="100%"></td>
+      <td>
+        <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/Raspberry%20Pi%20Pico%202/pico2-pinout.png" target="_blank">
+          <img src="pico2-pinout.png" width="100%">
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-S3%2016MB%20PSRAM%208MB/35_TFT_SPI_480x320_V1-0.jpg" target="_blank">
+          <img src="../ESP32-S3 16MB PSRAM 8MB/35_TFT_SPI_480x320_V1-0.jpg" width="100%">
+        </a>
+      </td>
     </tr>
   </table>
 </div>
