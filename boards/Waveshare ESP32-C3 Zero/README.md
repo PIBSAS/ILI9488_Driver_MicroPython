@@ -6,7 +6,8 @@
 
 <div align="center">
   <ul>
-  <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/Waveshare%20ESP32-C3%20Zero/esp32-c3_datasheet_en.pdf" target="_blank">ESP32 C3 Datasheet</a><br>
+  <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/Waveshare%20ESP32-C3%20Zero/esp32-c3_datasheet_en.pdf" target="_blank">ESP32 C3 Datasheet</a>
+    <br>
   <a href="https://docs.waveshare.com/ESP32-C3-Zero" target="_blank">Waveshare ESP32-C3 Zero Wiki</a>
   </ul>
 </div>
@@ -46,8 +47,16 @@
 <div align="center">
   <table>
     <tr>
-      <td align="center"><a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/Waveshare%20ESP32-C3%20Zero/ESP32-C3-Zero-Pinout.png" target="_blank"><img src="ESP32-C3-Zero-Pinout.png" width="100%"></td>
-      <td align="center"><a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-S3%2016MB%20PSRAM%208MB/35_TFT_SPI_480x320_V1-0.jpg" target="_blank"></a><img src="../ESP32-S3 16MB PSRAM 8MB/35_TFT_SPI_480x320_V1-0.jpg" width="100%"></td>
+      <td>
+        <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/Waveshare%20ESP32-C3%20Zero/ESP32-C3-Zero-Pinout.png" target="_blank">
+          <img src="ESP32-C3-Zero-Pinout.png" width="100%">
+        </a>
+      </td>
+      <td>
+        <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-S3%2016MB%20PSRAM%208MB/35_TFT_SPI_480x320_V1-0.jpg" target="_blank">
+          <img src="../ESP32-S3 16MB PSRAM 8MB/35_TFT_SPI_480x320_V1-0.jpg" width="100%">
+        </a>
+      </td>
     </tr>
   </table>
 </div>
