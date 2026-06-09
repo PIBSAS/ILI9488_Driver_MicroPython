@@ -1,6 +1,14 @@
 # Pins ESP32-WROOM-32D:
 
-- SPI principal (FSPI) - SPI_ID=1
+<div align="center">
+  <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-WROOM-32D/esp32-wroom-32d.png">
+</div>
+
+----
+
+- SPI principal (`FSPI`) - `SPI_ID=1`
+
+----
 
 | Nombre normal |	Nombre en tabla	| Pin (No.)   	| Pin Name |
 |---------------|-----------------|---------------|----------|
@@ -8,6 +16,8 @@
 | MOSI/SDA/SDI	| FSPID	          | 15	          | GPIO 13  |
 | SCK/CLK	      | FSPICLK	        | 12	          | GPIO 14  |
 | MISO/SDO      |	FSPIQ	          | 13	          | GPIO 12  |
+
+----
 
 # Pins 3,5" TFT SPI 480x320 v1.0 ILI9488:
 
@@ -23,6 +33,7 @@
 | GND           | GND             | 38                | GND      |
 | VCC           | 3V3             | 1                 | 3V3      |
 
+----
 
 <div align="center">
   <table>
