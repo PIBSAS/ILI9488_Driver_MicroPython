@@ -1,4 +1,4 @@
-# Pins Raspberry Pi Pico W:
+# Raspberry Pi Pico W Pinout:
 
 <div align="right">
   <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/Raspberry%20Pi%20Pico%20W/picow.png">
@@ -26,7 +26,7 @@
 
 ----
 
-# Pins 3,5" TFT SPI 480x320 v1.0 ILI9488:
+# 3,5" TFT SPI 480x320 v1.0 ILI9488 Pinout:
 
 | Nombre normal |	Nombre en tabla	| Pin (No.)       	| Pin Name |
 |---------------|-----------------|-------------------|----------|
