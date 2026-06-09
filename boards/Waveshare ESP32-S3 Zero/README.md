@@ -1,4 +1,4 @@
-# Pins Waveshare ESP32-S3 Zero:
+# Waveshare ESP32-S3 Zero Pinout:
 
 <div align="center">
   <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/Waveshare%20ESP32-S3%20Zero/ESP32-S3-Zero.webp">
@@ -26,7 +26,7 @@
 
 ----
 
-# Pins 3,5" TFT SPI 480x320 v1.0 ILI9488:
+# 3,5" TFT SPI 480x320 v1.0 ILI9488 Pinout:
 
 | Nombre normal |	Nombre en tabla	| Pin (No.)	        | Pin Name |
 |---------------|-----------------|-------------------|----------|
