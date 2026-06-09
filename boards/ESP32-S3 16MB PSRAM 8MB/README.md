@@ -1,6 +1,14 @@
 # Pins ESP32 S3 16MB PSRAM 8MB:
 
-- SPI principal (FSPI) - SPI_ID=1
+<div align="center">
+  <img src="">
+</div>
+
+----
+
+- SPI principal (`FSPI`) - `SPI_ID=1`
+
+----
 
 | Nombre normal |	Nombre en tabla	| Pin J3 (No.)	| Pin Name |
 |---------------|-----------------|---------------|----------|
@@ -8,6 +16,8 @@
 | MOSI/SDA/SDI	| FSPID	          | 17	          | GPIO 11  |
 | SCK/CLK	      | FSPICLK	        | 18	          | GPIO 12  |
 | MISO/SDO      |	FSPIQ	          | 19	          | GPIO 13  |
+
+----
 
 # Pins 3,5" TFT SPI 480x320 v1.0 ILI9488:
 
@@ -23,6 +33,7 @@
 | GND           | GND             | 1                 | GND      |
 | VCC           | 3V3             | J1 = 1            | 3V3      |
 
+----
 
 <div align="center">
   <table>
