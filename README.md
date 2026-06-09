@@ -591,3 +591,35 @@ Color.rgb(r, g, b)
 
 ----
 
+<h2>Waveshare ESP32 Getting started tutorials:</h2>
+
+<div>
+  <ul>
+    <li><a href="https://docs.waveshare.com/ESP32-Tutorials-Intro" target="_blank">ESP32 Tutorials intro</a></li>
+    <li><a href="https://docs.waveshare.com/ESP32-MicroPython-Tutorials" target="_blank">ESP32 MicroPython getting started</a></li>
+  </ul>
+</div>
+
+----
+
+<h2>Waveshare ESP32-S3-Zero:</h2>
+
+<div>
+  <ul>
+    <li><a href="https://docs.waveshare.com/ESP32-S3-Zero" target="_blank">ESP32-S3-Zero</a></li>
+  </ul>
+  <img src="">
+</div>
+
+----
+
+<h2>Waveshare ESP32-S3-Zero:</h2>
+
+<div>
+  <ul>
+    <li><a href="https://docs.waveshare.com/ESP32-C3-Zero" target="_blank">ESP32-C3-Zero</a></li>
+  </ul>
+  <img src="">
+</div>
+
+----
