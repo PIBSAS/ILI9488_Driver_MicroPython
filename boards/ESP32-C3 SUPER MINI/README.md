@@ -1,4 +1,4 @@
-# Pins ESP32-C3 SUPER MINI:
+# ESP32-C3 SUPER MINI Pinout:
 
 <div align="center">
   <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-C3%20SUPER%20MINI/esp32-c3%20super%20mini.png">  
@@ -26,7 +26,7 @@
 
 ----
 
-# Pins 3,5" TFT SPI 480x320 v1.0 ILI9488:
+# 3,5" TFT SPI 480x320 v1.0 ILI9488 Pinout:
 
 | Nombre normal |	Nombre en tabla	| Pin (No.)       	| Pin Name |
 |---------------|-----------------|-------------------|----------|
