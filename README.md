@@ -619,7 +619,7 @@ Color.rgb(r, g, b)
   <ul>
     <li><a href="https://docs.waveshare.com/ESP32-C3-Zero" target="_blank">ESP32-C3-Zero</a></li>
   </ul>
-  <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/Waveshare%20ESP32-C3%20Zero/ESP32-C3-Zero.webp">
+  <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/Waveshare%20ESP32-C3%20Zero/ESP32-C3-Zero.png">
 </div>
 
 ----
