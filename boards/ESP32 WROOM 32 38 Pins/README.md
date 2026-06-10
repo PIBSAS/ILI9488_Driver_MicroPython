@@ -1,14 +1,14 @@
-# ESP32 WROOM 32 Pinout:
+# ESP32 WROOM 32 38 Pins Pinout:
 
 <div align="center">
-  <img src="ESP32 WROOM 32.jpg" alt="ESP32 WROOM 32">
+  <img src="ESP32 WROOM 32 38.jpg" alt="ESP32 WROOM 32 38 Pins">
 </div>
 
 <div align="center">
   <ul>
-    <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32%20WROOM%2032/esp32-wroom-32_datasheet_en.pdf" target="_blank">ESP32 WROOM 32 Datasheet</a>
+    <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32%20WROOM%2032%2038%20Pins/esp32-wroom-32_datasheet_en.pdf" target="_blank">ESP32 WROOM 32 Datasheet</a>
     <br>
-    <a href="https://documentation.espressif.com/esp-dev-kits/en/latest/esp32/esp32-devkitc/user_guide_v2.html" target="_blank">ESP32 WROOM 32 Docs</a>
+    <a href="https://documentation.espressif.com/esp-dev-kits/en/latest/esp32/esp32-devkitc/user_guide_v2.html" target="_blank">ESP32 WROOM 32 38 Pins Docs</a>
   </ul>
 </div>
 
@@ -47,8 +47,8 @@
   <table>
     <tr>
       <td>
-        <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32%20WROOM%2032/ESP32%20WROOM%2032%20pinout.jpg" target="_blank">
-          <img src="ESP32 WROOM 32 pinout.jpg" width="100%">
+        <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32%20WROOM%2032%2038%20Pins/ESP32%20WROOM%2032%2038%20pin%20pinout.jpg" target="_blank">
+          <img src="ESP32 WROOM 32 38 pin pinout.jpg" width="100%">
         </a>
       </td>
       <td>
