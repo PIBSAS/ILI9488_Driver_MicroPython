@@ -597,6 +597,8 @@ Color.rgb(r, g, b)
 <li><a href="boards/ESP32-C3 SUPER MINI" target="_blank">ESP32-C3 SUPER MINI</a></li>
 <li><a href="boards/ESP32-S3 16MB PSRAM 8MB" target="_blank">ESP32-S3 16MB PSRAM 8MB</a></li>
 <li><a href="boards/ESP32-WROOM-32D" target="_blank">ESP32-WROOM-32D</a></li>
+<li><a href="boards/ESP32 WROOM 32" target="_blank">ESP32-WROOM-32</a></li>
+<li><a href="boards/NodeMCU ESP32 S" target="_blank">NodeMCU ESP32-S</a></li>
 <li><a href="boards/Raspberry Pi Pico" target="_blank">Raspberry Pi Pico</a></li>
 <li><a href="boards/Raspberry Pi Pico W" target="_blank">Raspberry Pi Pico W</a></li>
 <li><a href="boards/Raspberry Pi Pico 2" target="_blank">Raspberry Pi Pico 2</a></li>
@@ -604,7 +606,7 @@ Color.rgb(r, g, b)
 <li><a href="boards/RP2040 16 MB" target="_blank">RP2040 16 MB</a></li>
 <li><a href="boards/Waveshare ESP32-C3 Zero" target="_blank">Waveshare ESP32-C3 Zero</a></li>
 <li><a href="boards/Waveshare ESP32-S3 Zero" target="_blank">Waveshare ESP32-S3 Zero</a></li>
-<li><a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/tree/main/boards" target="_blank">Boards files</a></li>
+<li><a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/tree/main/boards" target="_blank">Boards files repo</a></li>
 </ul>
 
 ----
@@ -679,6 +681,28 @@ Color.rgb(r, g, b)
     <li><a href="https://documentation.espressif.com/esp-dev-kits/en/latest/esp32/esp32-devkitc/user_guide.html" target="_blank">ESP32 WROOM 32D</a></li>
   </ul>
   <img src="boards/ESP32-WROOM-32D/esp32-wroom-32d.png" alt="ESP32 WROOM 32D">
+</div>
+
+----
+
+<h2>ESP32 WROOM 32:</h2>
+
+<div>
+  <ul>
+    <li><a href="https://documentation.espressif.com/esp-dev-kits/en/latest/esp32/esp32-devkitc/user_guide_v2.html" target="_blank">ESP32 WROOM 32</a></li>
+  </ul>
+  <img src="boards/ESP32 WROOM 32/ESP32 WROOM 32.jpg" alt="ESP32 WROOM 32">
+</div>
+
+----
+
+<h2>NodeMCU ESP32-S:</h2>
+
+<div>
+  <ul>
+    <li><a href="https://nodemcu.readthedocs.io/en/dev-esp32/" target="_blank">NodeMCU ESP32-S</a></li>
+  </ul>
+  <img src="boards/NodeMCU ESP32 S/NodeMCU ESP32-S 38 pin.png" alt="NodeMCU ESP32-S">
 </div>
 
 ----
