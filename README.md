@@ -120,7 +120,8 @@
 &#x1F4DF; root microcontroller
 &#x251C;&#x2500;&#x2500; &#x1F4C1;fonts (WE DON'T NEED ALL OF THEM)
 &#x7C;   &#x251C;&#x2500;&#x2500; &#x1F4C4;vga1_8x8.py
-&#x7C;   &#x2514;&#x2500;&#x2500; &#x1F4C4;vga1_8x16.py 
+&#x7C;   &#x2514;&#x2500;&#x2500; &#x1F4C4;vga1_8x16.py
+&#x7C;   &#x2514;&#x2500;&#x2500; &#x1F4C4;vga1_16x16.py
 &#x7C;  
 &#x251C;&#x2500;&#x2500; &#x1F4C4;ili9488.py
 &#x251C;&#x2500;&#x2500; &#x1F4C4;set_display.py (from boards/YOUR_BOARD)
