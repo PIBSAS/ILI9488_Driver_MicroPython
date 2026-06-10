@@ -597,7 +597,8 @@ Color.rgb(r, g, b)
 <li><a href="boards/ESP32-C3 SUPER MINI" target="_blank">ESP32-C3 SUPER MINI</a></li>
 <li><a href="boards/ESP32-S3 16MB PSRAM 8MB" target="_blank">ESP32-S3 16MB PSRAM 8MB</a></li>
 <li><a href="boards/ESP32-WROOM-32D" target="_blank">ESP32-WROOM-32D</a></li>
-<li><a href="boards/ESP32 WROOM 32" target="_blank">ESP32-WROOM-32</a></li>
+<li><a href="boards/ESP32 WROOM 32" target="_blank">ESP32-WROOM-32 30 Pins</a></li>
+<li><a href="boards/ESP32 WROOM 32 38 Pins" target="_blank">ESP32-WROOM-32 38 Pins</a></li>
 <li><a href="boards/NodeMCU ESP32 S" target="_blank">NodeMCU ESP32-S</a></li>
 <li><a href="boards/Raspberry Pi Pico" target="_blank">Raspberry Pi Pico</a></li>
 <li><a href="boards/Raspberry Pi Pico W" target="_blank">Raspberry Pi Pico W</a></li>
@@ -685,16 +686,28 @@ Color.rgb(r, g, b)
 
 ----
 
-<h2>ESP32 WROOM 32:</h2>
+<h2>ESP32 WROOM 32 30 Pins:</h2>
 
 <div>
   <ul>
-    <li><a href="https://documentation.espressif.com/esp-dev-kits/en/latest/esp32/esp32-devkitc/user_guide_v2.html" target="_blank">ESP32 WROOM 32</a></li>
+    <li><a href="https://documentation.espressif.com/esp-dev-kits/en/latest/esp32/esp32-devkitc/user_guide_v2.html" target="_blank">ESP32 WROOM 32 30 Pins</a></li>
   </ul>
-  <img src="boards/ESP32 WROOM 32/ESP32 WROOM 32.jpg" alt="ESP32 WROOM 32">
+  <img src="boards/ESP32 WROOM 32/ESP32 WROOM 32.jpg" alt="ESP32 WROOM 32 30 Pins">
 </div>
 
 ----
+
+<h2>ESP32 WROOM 32 38 Pins:</h2>
+
+<div>
+  <ul>
+    <li><a href="https://documentation.espressif.com/esp-dev-kits/en/latest/esp32/esp32-devkitc/user_guide_v2.html" target="_blank">ESP32 WROOM 32 38 Pins</a></li>
+  </ul>
+  <img src="boards/ESP32 WROOM 32 38 Pins/ESP32 WROOM 32 38.jpg" alt="ESP32 WROOM 32 38 Pins">
+</div>
+
+----
+
 
 <h2>NodeMCU ESP32-S:</h2>
 
