@@ -20,10 +20,10 @@
 
 | Nombre normal |	Nombre en tabla	| Pin (No.)   	| Pin Name |
 |---------------|-----------------|---------------|----------|
-| CS/SS         |	VSPI SS	        | 29	          | GPIO  5  |
-| MOSI/SDA/SDI	| VSPI MOSI       | 37	          | GPIO 23  |
-| SCK/CLK	      | VSPI SCK        | 30	          | GPIO 18  |
-| MISO/SDO      |	VSPI MISO       | 31	          | GPIO 19  |
+| CS/SS         |	VSPI SS	        | 23	          | GPIO  5  |
+| MOSI/SDA/SDI	| VSPI MOSI       | 30	          | GPIO 23  |
+| SCK/CLK	      | VSPI SCK        | 24	          | GPIO 18  |
+| MISO/SDO      |	VSPI MISO       | 25	          | GPIO 19  |
 
 ----
 
@@ -31,15 +31,15 @@
 
 | Nombre normal |	Nombre en tabla	| Pin (No.)	        | Pin Name |
 |---------------|-----------------|-------------------|----------|
-| MISO/SD0      |	VSPI MISO       | 31	              | GPIO 19  |
-| LED           | ----------------| 11                | GPIO 27   |
-| SCK/CLK	      | VSPI SCK        | 30	              | GPIO 18  |
-| SDI/MOSI/SDA	| VSPI MOSI	      | 37	              | GPIO 23  |
-| DC/RS         | ----------------| 13                | GPIO 12  |
-| RESET         | ----------------| 12                | GPIO 14  |
-| CS/SS         |	VSPI SS	        | 29	              | GPIO  5  |
-| GND           | GND             | 38                | GND      |
-| VCC           | 3V3             | 1                 | 3V3      |
+| MISO/SD0      |	VSPI MISO       | 25	              | GPIO 19  |
+| LED           | ----------------| 10                | GPIO 27  |
+| SCK/CLK	      | VSPI SCK        | 24	              | GPIO 18  |
+| SDI/MOSI/SDA	| VSPI MOSI	      | 30	              | GPIO 23  |
+| DC/RS         | ----------------| 12                | GPIO 12  |
+| RESET         | ----------------| 11                | GPIO 14  |
+| CS/SS         |	VSPI SS	        | 23	              | GPIO  5  |
+| GND           | GND             | 14                | GND      |
+| VCC           | 3V3             | 16                | 3V3      |
 
 ----
 
