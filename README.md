@@ -132,6 +132,54 @@
 ----
 
 <div>
+  <h2>Basic template <code>set_display.py</code></h2>
+</div>
+
+
+````python
+from machine import SPI, Pin
+from ili9488 import driver
+
+SPI_ID = 1
+SPI_BAUDRATE = 40000000
+
+PIN_SCK  = YOUR_BOARD_SPI-CLK_PIN
+PIN_MOSI = YOUR_BOARD_SPI-MOSI_PIN
+PIN_MISO = YOUR_BOARD_SPI-MISO_PIN Only for touch board 
+PIN_CS   = YOUR_BOARD_SPI-CS_PIN
+
+PIN_DC   = YOUR_BOARD_ANY_GPIO_PIN
+PIN_RST  = YOUR_BOARD_ANY_GPIO_PIN
+PIN_BL   = YOUR_BOARD_ANY_GPIO_PIN OR 3V3 PIN # Backlight (optional if not 3V3 Pin available)
+
+# DONT TOUCH THE REST:
+def setting(rotation=0):
+    spi = SPI(
+        SPI_ID,
+        baudrate=SPI_BAUDRATE,
+        polarity=0,
+        phase=0,
+        sck=Pin(PIN_SCK),
+        mosi=Pin(PIN_MOSI),
+        miso=Pin(PIN_MISO)
+    )
+    Pin(PIN_BL, Pin.OUT, value=1)
+    
+    display = driver(
+        spi,
+        PIN_CS,
+        PIN_DC,
+        PIN_RST
+    )
+    
+    display.set_rotation(rotation)
+    
+    return display
+````
+
+----
+
+<div>
   <h2>Basic template code</h2>
 </div>
 
@@ -152,7 +200,6 @@ lcd.text("Luciano's tech", 0, 10, Color.RED, font, Color.PCYAN)
 ````
 
 ----
-
 
 <h2>Class Color</h2>
 
@@ -598,6 +645,94 @@ Color.rgb(r, g, b)
     <li><a href="https://docs.waveshare.com/ESP32-Tutorials-Intro" target="_blank">ESP32 Tutorials intro</a></li>
     <li><a href="https://docs.waveshare.com/ESP32-MicroPython-Tutorials" target="_blank">ESP32 MicroPython getting started</a></li>
   </ul>
+</div>
+
+----
+
+<h2>ESP32-C3 SUPER MINI:</h2>
+
+<div>
+  <ul>
+    <li><a href="https://wiki.nologo.tech/en/product/esp32/esp32c3SuperMini/esp32C3SuperMini.html" target="_blank">ESP32-C3 SUPER MINI</a></li>
+  </ul>
+  <img src="boards/ESP32-C3 SUPER MINI/esp32-c3 super mini.png" alt="ESP32-C3 SUPER MINI">
+</div>
+
+----
+
+<h2>ESP32-S3 WROOM-1 16MB PSRAM 8MB:</h2>
+
+<div>
+  <ul>
+    <li><a href="https://documentation.espressif.com/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/user_guide_v1.1.html" target="_blank">ESP32-S3 WROOM-1 16MB PSRAM 8MB</a></li>
+  </ul>
+  <img src="boards/ESP32-S3 16MB PSRAM 8MB/ESP32-S3-16MB-PSRAM-8MB.png" alt="ESP32-S3 WROOM-1 16MB PSRAM 8MB">
+</div>
+
+----
+
+<h2>ESP32 WROOM 32D:</h2>
+
+<div>
+  <ul>
+    <li><a href="https://documentation.espressif.com/esp-dev-kits/en/latest/esp32/esp32-devkitc/user_guide.html" target="_blank">ESP32 WROOM 32D</a></li>
+  </ul>
+  <img src="boards/ESP32-WROOM-32D/esp32-wroom-32d.png" alt="ESP32 WROOM 32D">
+</div>
+
+----
+
+<h2>YD-RP2040 16MB:</h2>
+
+<div>
+  <ul>
+    <li><a href="https://sites.google.com/view/lucianostech/yd-rp2040-16mb" target="_blank">YD-RP2040 16MB</a></li>
+  </ul>
+  <img src="boards/RP2040 16 MB/YD-RP2040 16MB.png" alt="YD-RP2040 16MB">
+</div>
+
+----
+
+<h2>Raspberry Pi Pico:</h2>
+
+<div>
+  <ul>
+    <li><a href="https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#pico1" target="_blank">Raspberry Pi Pico</a></li>
+  </ul>
+  <img src="boards/Raspberry Pi Pico/pico.png" alt="Raspberry Pi Pico">
+</div>
+
+----
+
+<h2>Raspberry Pi Pico W:</h2>
+
+<div>
+  <ul>
+    <li><a href="https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#wireless_pico" target="_blank">Raspberry Pi Pico W</a></li>
+  </ul>
+  <img src="boards/Raspberry Pi Pico W/picow.png" alt="Raspberry Pi Pico W">
+</div>
+
+----
+
+<h2>Raspberry Pi Pico 2:</h2>
+
+<div>
+  <ul>
+    <li><a href="https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#pico2" target="_blank">Raspberry Pi Pico 2</a></li>
+  </ul>
+  <img src="boards/Raspberry Pi Pico 2/pico2.png" alt="Raspberry Pi Pico 2">
+</div>
+
+----
+
+<h2>Raspberry Pi Pico 2W:</h2>
+
+<div>
+  <ul>
+    <li><a href="https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#wireless_pico2" target="_blank">Raspberry Pi Pico 2W</a></li>
+  </ul>
+  <img src="boards/Raspberry Pi Pico 2W/pico2w.png" alt="Raspberry Pi Pico 2W">
 </div>
 
 ----
