@@ -8,12 +8,12 @@
     <tr>
       <td>
         <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32%20WROOM%2032/ESP32%20WROOM%2032%20pinout.jpg" target="_blank">
-          <img src="ESP32 WROOM 32 pinout.jpg" width="100%">
+          <img src="ESP32 WROOM 32.jpg" width="100%">
         </a>
       </td>
       <td>
         <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-S3%2016MB%20PSRAM%208MB/35_TFT_SPI_480x320_V1-0.jpg" target="_blank">
-          <img src="ESP32 WROOM 32 38 pin pinout.jpg" width="100%">
+          <img src="ESP32 WROOM 32 38.jpg" width="100%">
         </a>
       </td>
     </tr>
