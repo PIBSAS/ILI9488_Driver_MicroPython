@@ -703,7 +703,7 @@ Color.rgb(r, g, b)
   <ul>
     <li><a href="https://documentation.espressif.com/esp-dev-kits/en/latest/esp32/esp32-devkitc/user_guide_v2.html" target="_blank">ESP32 WROOM 32 38 Pins</a></li>
   </ul>
-  <img src="boards/ESP32 WROOM 32 38 Pins/ESP32 WROOM 32 38.jpg" alt="ESP32 WROOM 32 38 Pins" width="263" height="432">
+  <img src="boards/ESP32 WROOM 32 38 Pins/ESP32 WROOM 32 38.png" alt="ESP32 WROOM 32 38 Pins" width="359" height="826">
 </div>
 
 ----
@@ -758,7 +758,7 @@ Color.rgb(r, g, b)
   <ul>
     <li><a href="https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#pico2" target="_blank">Raspberry Pi Pico 2</a></li>
   </ul>
-  <img src="boards/Raspberry Pi Pico 2/pico2.png" alt="Raspberry Pi Pico 2">
+  <img src="boards/Raspberry Pi Pico 2/pico2.png" alt="Raspberry Pi Pico 2" width="405" height="1370">
 </div>
 
 ----
@@ -769,7 +769,7 @@ Color.rgb(r, g, b)
   <ul>
     <li><a href="https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#wireless_pico2" target="_blank">Raspberry Pi Pico 2W</a></li>
   </ul>
-  <img src="boards/Raspberry Pi Pico 2W/pico2w.png" alt="Raspberry Pi Pico 2W">
+  <img src="boards/Raspberry Pi Pico 2W/pico2w.png" alt="Raspberry Pi Pico 2W" width="405" height="1370">
 </div>
 
 ----
