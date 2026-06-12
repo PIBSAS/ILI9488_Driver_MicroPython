@@ -180,6 +180,27 @@ def setting(rotation=0):
 
 ----
 
+<h2>Boards settings:</h2>
+
+<ul>
+<li><a href="boards/ESP32-C3 SUPER MINI" target="_blank">ESP32-C3 SUPER MINI</a></li>
+<li><a href="boards/ESP32-S3 16MB PSRAM 8MB" target="_blank">ESP32-S3 16MB PSRAM 8MB</a></li>
+<li><a href="boards/ESP32-WROOM-32D" target="_blank">ESP32-WROOM-32D</a></li>
+<li><a href="boards/ESP32 WROOM 32" target="_blank">ESP32-WROOM-32 30 Pins</a></li>
+<li><a href="boards/ESP32 WROOM 32 38 Pins" target="_blank">ESP32-WROOM-32 38 Pins</a></li>
+<li><a href="boards/NodeMCU ESP32 S" target="_blank">NodeMCU ESP32-S</a></li>
+<li><a href="boards/Raspberry Pi Pico" target="_blank">Raspberry Pi Pico</a></li>
+<li><a href="boards/Raspberry Pi Pico W" target="_blank">Raspberry Pi Pico W</a></li>
+<li><a href="boards/Raspberry Pi Pico 2" target="_blank">Raspberry Pi Pico 2</a></li>
+<li><a href="boards/Raspberry Pi Pico 2W" target="_blank">Raspberry Pi Pico 2W</a></li>
+<li><a href="boards/RP2040 16 MB" target="_blank">RP2040 16 MB</a></li>
+<li><a href="boards/Waveshare ESP32-C3 Zero" target="_blank">Waveshare ESP32-C3 Zero</a></li>
+<li><a href="boards/Waveshare ESP32-S3 Zero" target="_blank">Waveshare ESP32-S3 Zero</a></li>
+<li><a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/tree/main/boards" target="_blank">Boards files repo</a></li>
+</ul>
+
+----
+
 <div>
   <h2>Basic template code</h2>
 </div>
@@ -591,27 +612,6 @@ Color.rgb(r, g, b)
 
 ----
 
-<h2>Boards settings:</h2>
-
-<ul>
-<li><a href="boards/ESP32-C3 SUPER MINI" target="_blank">ESP32-C3 SUPER MINI</a></li>
-<li><a href="boards/ESP32-S3 16MB PSRAM 8MB" target="_blank">ESP32-S3 16MB PSRAM 8MB</a></li>
-<li><a href="boards/ESP32-WROOM-32D" target="_blank">ESP32-WROOM-32D</a></li>
-<li><a href="boards/ESP32 WROOM 32" target="_blank">ESP32-WROOM-32 30 Pins</a></li>
-<li><a href="boards/ESP32 WROOM 32 38 Pins" target="_blank">ESP32-WROOM-32 38 Pins</a></li>
-<li><a href="boards/NodeMCU ESP32 S" target="_blank">NodeMCU ESP32-S</a></li>
-<li><a href="boards/Raspberry Pi Pico" target="_blank">Raspberry Pi Pico</a></li>
-<li><a href="boards/Raspberry Pi Pico W" target="_blank">Raspberry Pi Pico W</a></li>
-<li><a href="boards/Raspberry Pi Pico 2" target="_blank">Raspberry Pi Pico 2</a></li>
-<li><a href="boards/Raspberry Pi Pico 2W" target="_blank">Raspberry Pi Pico 2W</a></li>
-<li><a href="boards/RP2040 16 MB" target="_blank">RP2040 16 MB</a></li>
-<li><a href="boards/Waveshare ESP32-C3 Zero" target="_blank">Waveshare ESP32-C3 Zero</a></li>
-<li><a href="boards/Waveshare ESP32-S3 Zero" target="_blank">Waveshare ESP32-S3 Zero</a></li>
-<li><a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/tree/main/boards" target="_blank">Boards files repo</a></li>
-</ul>
-
-----
-
 <h2>Display's manual</h2>
 
 <div>
@@ -659,7 +659,7 @@ Color.rgb(r, g, b)
   <ul>
     <li><a href="https://wiki.nologo.tech/en/product/esp32/esp32c3SuperMini/esp32C3SuperMini.html" target="_blank">ESP32-C3 SUPER MINI</a></li>
   </ul>
-  <img src="boards/ESP32-C3 SUPER MINI/esp32-c3 super mini.png" alt="ESP32-C3 SUPER MINI">
+  <img src="boards/ESP32-C3 SUPER MINI/esp32-c3 super mini.png" alt="ESP32-C3 SUPER MINI" width="345" height="502">
 </div>
 
 ----
@@ -670,7 +670,7 @@ Color.rgb(r, g, b)
   <ul>
     <li><a href="https://documentation.espressif.com/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/user_guide_v1.1.html" target="_blank">ESP32-S3 WROOM-1 16MB PSRAM 8MB</a></li>
   </ul>
-  <img src="boards/ESP32-S3 16MB PSRAM 8MB/ESP32-S3-16MB-PSRAM-8MB.png" alt="ESP32-S3 WROOM-1 16MB PSRAM 8MB">
+  <img src="boards/ESP32-S3 16MB PSRAM 8MB/ESP32-S3-16MB-PSRAM-8MB.png" alt="ESP32-S3 WROOM-1 16MB PSRAM 8MB"  width="318" height="848">
 </div>
 
 ----
@@ -692,7 +692,7 @@ Color.rgb(r, g, b)
   <ul>
     <li><a href="https://documentation.espressif.com/esp-dev-kits/en/latest/esp32/esp32-devkitc/user_guide_v2.html" target="_blank">ESP32 WROOM 32 30 Pins</a></li>
   </ul>
-  <img src="boards/ESP32 WROOM 32/ESP32 WROOM 32.jpg" alt="ESP32 WROOM 32 30 Pins">
+  <img src="boards/ESP32 WROOM 32/ESP32 WROOM 32.jpg" alt="ESP32 WROOM 32 30 Pins" width="347" height="737">
 </div>
 
 ----
@@ -703,11 +703,10 @@ Color.rgb(r, g, b)
   <ul>
     <li><a href="https://documentation.espressif.com/esp-dev-kits/en/latest/esp32/esp32-devkitc/user_guide_v2.html" target="_blank">ESP32 WROOM 32 38 Pins</a></li>
   </ul>
-  <img src="boards/ESP32 WROOM 32 38 Pins/ESP32 WROOM 32 38.jpg" alt="ESP32 WROOM 32 38 Pins">
+  <img src="boards/ESP32 WROOM 32 38 Pins/ESP32 WROOM 32 38.jpg" alt="ESP32 WROOM 32 38 Pins" width="263" height="432">
 </div>
 
 ----
-
 
 <h2>NodeMCU ESP32-S:</h2>
 
@@ -715,7 +714,7 @@ Color.rgb(r, g, b)
   <ul>
     <li><a href="https://nodemcu.readthedocs.io/en/dev-esp32/" target="_blank">NodeMCU ESP32-S</a></li>
   </ul>
-  <img src="boards/NodeMCU ESP32 S/NodeMCU ESP32-S 38 pin.png" alt="NodeMCU ESP32-S">
+  <img src="boards/NodeMCU ESP32 S/NodeMCU ESP32-S 38 pin.png" alt="NodeMCU ESP32-S" width="354" height="914">
 </div>
 
 ----
@@ -726,7 +725,7 @@ Color.rgb(r, g, b)
   <ul>
     <li><a href="https://sites.google.com/view/lucianostech/yd-rp2040-16mb" target="_blank">YD-RP2040 16MB</a></li>
   </ul>
-  <img src="boards/RP2040 16 MB/YD-RP2040 16MB.png" alt="YD-RP2040 16MB">
+  <img src="boards/RP2040 16 MB/YD-RP2040 16MB.png" alt="YD-RP2040 16MB" width="403" height="752">
 </div>
 
 ----
@@ -748,7 +747,7 @@ Color.rgb(r, g, b)
   <ul>
     <li><a href="https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#wireless_pico" target="_blank">Raspberry Pi Pico W</a></li>
   </ul>
-  <img src="boards/Raspberry Pi Pico W/picow.png" alt="Raspberry Pi Pico W">
+  <img src="boards/Raspberry Pi Pico W/picow.png" alt="Raspberry Pi Pico W" width="402" height="1015">
 </div>
 
 ----
@@ -759,7 +758,7 @@ Color.rgb(r, g, b)
   <ul>
     <li><a href="https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#pico2" target="_blank">Raspberry Pi Pico 2</a></li>
   </ul>
-  <img src="boards/Raspberry Pi Pico 2/pico2.png" alt="Raspberry Pi Pico 2">
+  <img src="boards/Raspberry Pi Pico 2/pico2.png" alt="Raspberry Pi Pico 2" width="402" height="1015">
 </div>
 
 ----
@@ -770,7 +769,7 @@ Color.rgb(r, g, b)
   <ul>
     <li><a href="https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#wireless_pico2" target="_blank">Raspberry Pi Pico 2W</a></li>
   </ul>
-  <img src="boards/Raspberry Pi Pico 2W/pico2w.png" alt="Raspberry Pi Pico 2W">
+  <img src="boards/Raspberry Pi Pico 2W/pico2w.png" alt="Raspberry Pi Pico 2W" width="402" height="1015">
 </div>
 
 ----
