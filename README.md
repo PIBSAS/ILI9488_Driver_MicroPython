@@ -758,7 +758,7 @@ Color.rgb(r, g, b)
   <ul>
     <li><a href="https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#pico2" target="_blank">Raspberry Pi Pico 2</a></li>
   </ul>
-  <img src="boards/Raspberry Pi Pico 2/pico2.png" alt="Raspberry Pi Pico 2" width="402" height="1015">
+  <img src="boards/Raspberry Pi Pico 2/pico2.png" alt="Raspberry Pi Pico 2">
 </div>
 
 ----
@@ -769,7 +769,7 @@ Color.rgb(r, g, b)
   <ul>
     <li><a href="https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html#wireless_pico2" target="_blank">Raspberry Pi Pico 2W</a></li>
   </ul>
-  <img src="boards/Raspberry Pi Pico 2W/pico2w.png" alt="Raspberry Pi Pico 2W" width="402" height="1015">
+  <img src="boards/Raspberry Pi Pico 2W/pico2w.png" alt="Raspberry Pi Pico 2W">
 </div>
 
 ----
