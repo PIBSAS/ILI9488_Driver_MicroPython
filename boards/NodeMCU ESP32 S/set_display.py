@@ -1,7 +1,7 @@
 from machine import SPI, Pin
 from ili9488 import driver
 
-SPI_ID = 1
+SPI_ID = 2
 SPI_BAUDRATE = 40000000
 
 PIN_SCK  = 18
