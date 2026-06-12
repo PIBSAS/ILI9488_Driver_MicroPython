@@ -1,7 +1,7 @@
 # ESP32 WROOM 32 38 Pins Pinout:
 
 <div align="center">
-  <img src="ESP32 WROOM 32 38.jpg" alt="ESP32 WROOM 32 38 Pins">
+  <img src="ESP32 WROOM 32 38.png" alt="ESP32 WROOM 32 38 Pins">
 </div>
 
 <div align="center">
