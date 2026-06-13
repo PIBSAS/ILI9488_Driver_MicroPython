@@ -1,7 +1,7 @@
 <h1 align="center">ILI9488 Driver MicroPython for 3.5" TFT SPI 320x480 V1.0 Display</h1>
 
 <div align="center">
-  <img src="boards/ESP32-S3 16MB PSRAM 8MB/35_TFT_SPI_480x320_V1-0.jpg" alt="" target="_blank">
+  <img src="boards/ESP32-S3 16MB PSRAM 8MB/35_TFT_SPI_480x320_V1-0.png" alt="" target="_blank">
 </div>
 
 ----
@@ -692,7 +692,7 @@ Color.rgb(r, g, b)
   <ul>
     <li><a href="https://documentation.espressif.com/esp-dev-kits/en/latest/esp32/esp32-devkitc/user_guide_v2.html" target="_blank">ESP32 WROOM 32 30 Pins</a></li>
   </ul>
-  <img src="boards/ESP32 WROOM 32/ESP32 WROOM 32.jpg" alt="ESP32 WROOM 32 30 Pins" width="347" height="737">
+  <img src="boards/ESP32 WROOM 32/ESP32 WROOM 32 30.png" alt="ESP32 WROOM 32 30 Pins">
 </div>
 
 ----
