@@ -692,7 +692,7 @@ Color.rgb(r, g, b)
   <ul>
     <li><a href="https://documentation.espressif.com/esp-dev-kits/en/latest/esp32/esp32-devkitc/user_guide_v2.html" target="_blank">ESP32 WROOM 32 30 Pins</a></li>
   </ul>
-  <img src="boards/ESP32 WROOM 32/ESP32 WROOM 32 30.png" alt="ESP32 WROOM 32 30 Pins">
+  <img src="boards/ESP32 WROOM 32/ESP32 WROOM 32 30.png" alt="ESP32 WROOM 32 30 Pins" width="367" height="805">
 </div>
 
 ----
