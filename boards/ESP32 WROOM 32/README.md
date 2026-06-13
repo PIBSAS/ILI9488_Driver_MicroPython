@@ -14,7 +14,7 @@
 
 ----
 
-- SPI principal (`FSPI`) - `SPI_ID=2`
+- SPI principal (`VSPI`) - `SPI_ID=2`
 
 ----
 
