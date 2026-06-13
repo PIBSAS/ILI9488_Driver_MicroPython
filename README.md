@@ -141,7 +141,7 @@
 from machine import SPI, Pin
 from ili9488 import driver
 
-SPI_ID = 1
+SPI_ID = 1 # 2 on ESP32-S, ESP32-WROOM
 SPI_BAUDRATE = 40000000
 
 PIN_SCK  = YOUR_BOARD_SPI-CLK_PIN
