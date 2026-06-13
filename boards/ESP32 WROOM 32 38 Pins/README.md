@@ -32,7 +32,7 @@
 | Nombre normal |	Nombre en tabla	| Pin (No.)	        | Pin Name |
 |---------------|-----------------|-------------------|----------|
 | MISO/SD0      |	VSPI MISO       | 31	              | GPIO 19  |
-| LED           | ----------------| 11                | GPIO 27   |
+| LED           | ----------------| 11                | GPIO 27  |
 | SCK/CLK	      | VSPI SCK        | 30	              | GPIO 18  |
 | SDI/MOSI/SDA	| VSPI MOSI	      | 37	              | GPIO 23  |
 | DC/RS         | ----------------| 13                | GPIO 12  |
@@ -52,8 +52,8 @@
         </a>
       </td>
       <td>
-        <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-S3%2016MB%20PSRAM%208MB/35_TFT_SPI_480x320_V1-0.jpg" target="_blank">
-          <img src="../ESP32-S3 16MB PSRAM 8MB/35_TFT_SPI_480x320_V1-0.jpg" width="100%">
+        <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-S3%2016MB%20PSRAM%208MB/35_TFT_SPI_480x320_V1-0.png" target="_blank">
+          <img src="../ESP32-S3 16MB PSRAM 8MB/35_TFT_SPI_480x320_V1-0.png" width="100%">
         </a>
       </td>
     </tr>
