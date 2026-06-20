@@ -1,5 +1,6 @@
-from machine import SPI, Pin
+from machine import SPI, Pin, SDCard
 from ili9488 import driver
+import os
 
 SPI_ID = 1
 SPI_BAUDRATE = 40000000
@@ -13,6 +14,14 @@ PIN_DC   = 6
 PIN_RST  = 7
 # Backlight (opcional if not 3V3 Pin available)
 PIN_BL   = 5
+
+# SD Pins
+SD_CS   = 1
+SD_MISO = 2
+SD_MOSI = 3
+SD_SCK  = 4
+
+MOUNT_POINT = "/sd"
 
 def setting(rotation=0):
     spi = SPI(
@@ -36,3 +45,34 @@ def setting(rotation=0):
     display.set_rotation(rotation)
     
     return display
+
+
+def mount_sd():
+    sd = SDCard(
+        slot=2,
+        sck=SD_SCK,
+        mosi=SD_MOSI,
+        miso=SD_MISO,
+        cs=SD_CS
+    )
+    
+    try:
+        os.mount(sd, MOUNT_POINT)
+    except OSError:
+        pass
+    
+    return sd
+
+
+def files():
+    try:
+        return os.listdir(MOUNT_POINT)
+    except OSError:
+        return []
+
+
+def umount():
+    try:
+        os.umount(MOUNT_POINT)
+    except OSError:
+        pass
