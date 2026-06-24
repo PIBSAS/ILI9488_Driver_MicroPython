@@ -1498,7 +1498,50 @@ class driver:
                     color
                 )
 
+    # -----------------------
+    
+    def axes(self, color=0xFFFF, axis_color=0xFFFF, center_dot=True):
+        """
+        Dibuja ejes cartesianos completos (X e Y) centrados en pantalla.
+        Funciona con cualquier rotación porque usa lcd.width y lcd.height.
+        
+        color: color general de líneas
+        axis_color: color de los ejes principales
+        center_dot: marca el origen
+        """
+    
+        w = self.width
+        h = self.height
+    
+        cx = w // 2
+        cy = h // 2
+    
+        # Fondo opcional (si querés limpiar antes)
+        # self.fill_rect(0, 0, w, h, 0x0000)
+    
+        # EJE X (horizontal)
+        self.hline(0, cy, w, axis_color)
+    
+        # EJE Y (vertical)
+        self.vline(cx, 0, h, axis_color)
+    
+        # Marcar origen
+        if center_dot:
+            self.fill_rect(cx - 2, cy - 2, 5, 5, color)
+    
+        # Opcional: pequeñas marcas (ticks)
+        step = 20
+    
+        # ticks eje X
+        for x in range(0, w, step):
+            self.vline(x, cy - 3, 6, color)
+    
+        # ticks eje Y
+        for y in range(0, h, step):
+            self.hline(cx - 3, y, 6, color)
+
 # -----------------------
+
 class Color:
     # Colores RGB565
     BLACK   = 0x0000
