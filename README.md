@@ -568,6 +568,11 @@ circle(xc, yc, radius, color)
 fill_circle(xc, yc, radius, color)
 ````
 
+<h3>Draw a filled ring</h3>
+
+````python
+fill_ring(xc, yc, rx, ry, width, color)
+````
 
 <h3>Draw image buffer at x,y position:</h3>
 
