@@ -574,6 +574,12 @@ fill_circle(xc, yc, radius, color)
 fill_ring(xc, yc, rx, ry, width, color)
 ````
 
+<h3>Plot axes with 4 quadrants</h3>
+
+````python
+axes(scolor=0xFFFF, axis_color=0xFFFF, center_dot=True)
+````
+
 <h3>Draw image buffer at x,y position:</h3>
 
 ````python
