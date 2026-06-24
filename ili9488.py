@@ -1445,6 +1445,59 @@ class driver:
                 "mode must be None, 'fit' or 'stretch'"
             )
 
+    # -----------------------
+    
+    def fill_ring(xc, yc, rx, ry, width, color):
+        rx_out = rx + width
+        ry_out = ry + width
+    
+        # Recorremos cada fila de píxeles de la elipse exterior
+        for y in range(yc - ry_out, yc + ry_out + 1):
+    
+            dy = y - yc
+    
+            # Mitad del ancho de la elipse exterior en esta fila
+            value_out = 1 - (dy * dy) / (ry_out * ry_out)
+    
+            if value_out < 0:
+                continue
+    
+            x_out = int(rx_out * sqrt(value_out))
+    
+            # Si la fila está dentro de la elipse interior,
+            # calculamos su mitad de ancho.
+            if -ry <= dy <= ry:
+                value_in = 1 - (dy * dy) / (ry * ry)
+    
+                if value_in >= 0:
+                    x_in = int(rx * sqrt(value_in))
+    
+                    # Segmento izquierdo del aro
+                    lcd.hline(
+                        xc - x_out,
+                        y,
+                        x_out - x_in + 1,
+                        color
+                    )
+    
+                    # Segmento derecho del aro
+                    lcd.hline(
+                        xc + x_in,
+                        y,
+                        x_out - x_in + 1,
+                        color
+                    )
+    
+            else:
+                # Arriba y abajo del hueco interior:
+                # toda la fila pertenece al aro.
+                lcd.hline(
+                    xc - x_out,
+                    y,
+                    2 * x_out + 1,
+                    color
+                )
+
 # -----------------------
 class Color:
     # Colores RGB565
