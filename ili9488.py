@@ -1540,6 +1540,70 @@ class driver:
         for y in range(0, h, step):
             self.hline(cx - 3, y, 6, color)
 
+    # -----------------------
+
+    def plot(self, x, y, color=0xFFFF, scale=1):
+        """
+        Plot cartesiano con escala.
+        scale = cuántos píxeles vale 1 unidad.
+        """
+    
+        cx = self.width // 2
+        cy = self.height // 2
+    
+        px = cx + int(x * scale)
+        py = cy - int(y * scale)
+    
+        if 0 <= px < self.width and 0 <= py < self.height:
+            self.pixel(px, py, color)
+    
+    # -----------------------
+
+    def plot_function(self, func, x_min, x_max, step=1, color=0xFFFF, scale=1):
+        """
+        Dibuja una función y = f(x) en coordenadas cartesianas.
+    
+        func  -> función Python (lambda o def)
+        x_min -> inicio del dominio
+        x_max -> fin del dominio
+        step  -> resolución en x
+        """
+    
+        x = x_min
+        first = True
+    
+        prev_x = None
+        prev_y = None
+    
+        while x <= x_max:
+    
+            try:
+                y = func(x)
+            except:
+                x += step
+                continue
+    
+            # primera iteración solo guarda punto
+            if first:
+                self.plot(x, y, color=color, scale=scale)
+                prev_x = x
+                prev_y = y
+                first = False
+            else:
+                # conectamos puntos para que no quede discontinuo
+                self.line(
+                    int(prev_x * scale + self.width // 2),
+                    int(self.height // 2 - prev_y * scale),
+                    int(x * scale + self.width // 2),
+                    int(self.height // 2 - y * scale),
+                    color
+                )
+    
+                prev_x = x
+                prev_y = y
+    
+            x += step
+
 # -----------------------
 
 class Color:
