@@ -1500,7 +1500,7 @@ class driver:
 
     # -----------------------
     
-    def axes(self, color=0xFFFF, axis_color=0xFFFF, center_dot=True):
+    def axes(self, color=0xFFFF, axis_color=0xFFFF, center_dot=True, scale_x=10, scale_y=10, tick_size=6):
         """
         Dibuja ejes cartesianos completos (X e Y) centrados en pantalla.
         Funciona con cualquier rotación porque usa lcd.width y lcd.height.
@@ -1508,6 +1508,9 @@ class driver:
         color: color general de líneas
         axis_color: color de los ejes principales
         center_dot: marca el origen
+        scale_x: Unidad matematica 1 = 10 px
+        scale_y: Unidad matematica 1 = 10 px
+        tick_size: Tamaño del tick 6px
         """
     
         w = self.width
@@ -1527,82 +1530,150 @@ class driver:
     
         # Marcar origen
         if center_dot:
-            self.fill_rect(cx - 2, cy - 2, 5, 5, color)
+            self.fill_circle(cx, cy, 2, color)
     
-        # Opcional: pequeñas marcas (ticks)
-        step = 20
-    
-        # ticks eje X
-        for x in range(0, w, step):
-            self.vline(x, cy - 3, 6, color)
-    
-        # ticks eje Y
-        for y in range(0, h, step):
-            self.hline(cx - 3, y, 6, color)
+         # Ticks del eje X:
+        # cada tick está separado scale_x píxeles,
+        # o sea, representa 1 unidad en X.
+        x = cx + scale_x
+        while x < w:
+            self.vline(x, cy - tick_size//2, tick_size, color)
+            x += scale_x
+
+        x = cx - scale_x
+        while x >= 0:
+            self.vline(x, cy - tick_size//2, tick_size, color)
+            x -= scale_x
+        
+        # Ticks del eje Y:
+        # cada tick está separado scale_y píxeles,
+        # o sea, representa 1 unidad en Y.
+        y = cy + scale_y
+        while y < h:
+            self.hline(cx - tick_size//2, y, tick_size, color)
+            y += scale_y
+
+        y = cy - scale_y
+        while y >= 0:
+            self.hline(cx - tick_size//2, y, tick_size, color)
+            y -= scale_y
 
     # -----------------------
 
-    def plot(self, x, y, color=0xFFFF, scale=1):
+    def _to_screen(self, x, y, scale_x=10, scale_y=10):
         """
-        Plot cartesiano con escala.
-        scale = cuántos píxeles vale 1 unidad.
+        Convierte coordenadas cartesianas a píxeles de pantalla.
+
+        Por defecto:
+            1 unidad matemática = 10 píxeles.
         """
-    
         cx = self.width // 2
         cy = self.height // 2
+
+        sx = cx + int(x * scale_x)
+        sy = cy - int(y * scale_y)
+
+        return sx, sy
+
+    # ----------------------
+
+    def _thick_pixel(self, x, y, color, thickness=1):
+        """
+        Dibuja un punto cuadrado centrado en (x, y).
+        thickness=1 dibuja exactamente un píxel.
+        """
+        if thickness <= 1:
+            if 0 <= x < self.width and 0 <= y < self.height:
+                self.pixel(x, y, color)
+            return
+
+        radius = thickness // 2
+
+        self.fill_circle(x ,y, radius, color)
+
+    # -----------------------
     
-        px = cx + int(x * scale)
-        py = cy - int(y * scale)
+    def _thick_line(self, x0, y0, x1, y1, color, thickness=1):
+        """
+        Dibuja una línea de grosor configurable.
+
+        thickness=1 usa line() normal.
+        Para grosores mayores dibuja líneas desplazadas.
+        """
+        if thickness <= 1:
+            self.line(x0, y0, x1, y1, color)
+            return
+
+        half = thickness // 2
+
+        dx = abs(x1 - x0)
+        dy = abs(y1 - y0)
+
+        # Línea más horizontal: desplazamos verticalmente.
+        if dx >= dy:
+            for offset in range(-half, half + 1):
+                self.line(x0, y0 + offset, x1, y1 + offset, color)
+
+        # Línea más vertical: desplazamos horizontalmente.
+        else:
+            for offset in range(-half, half + 1):
+                self.line(x0 + offset, y0, x1 + offset, y1, color)
     
-        if 0 <= px < self.width and 0 <= py < self.height:
-            self.pixel(px, py, color)
-    
+    # ----------------------
+
+    def plot(self, x, y, color=0xFFFF, scale_x=10, scale_y=10, thickness=1):
+        """
+        Dibuja un punto en coordenadas cartesianas.
+
+        Ejemplo:
+            lcd.plot(2, 3)
+
+        dibuja el punto (2, 3), que por defecto queda:
+            20 px a la derecha
+            30 px arriba
+        del origen.
+        """
+        sx, sy = self._to_screen(x, y, scale_x, scale_y)
+
+        if 0 <= sx < self.width and 0 <= sy < self.height:
+            self._thick_pixel(sx, sy, color, thickness)
+
     # -----------------------
 
-    def plot_function(self, func, x_min, x_max, step=1, color=0xFFFF, scale=1):
+    def plot_function(self, func, x_min, x_max, step=0.05, color=0xFFFF, scale_x=10, scale_y=10, thickness=1):
         """
-        Dibuja una función y = f(x) en coordenadas cartesianas.
-    
-        func  -> función Python (lambda o def)
-        x_min -> inicio del dominio
-        x_max -> fin del dominio
-        step  -> resolución en x
+        Grafica y = func(x).
+
+        scale_x y scale_y indican cuántos píxeles representa
+        una unidad matemática en cada eje.
         """
-    
+
+        prev = None
         x = x_min
-        first = True
-    
-        prev_x = None
-        prev_y = None
-    
+
         while x <= x_max:
-    
+
             try:
                 y = func(x)
-            except:
+            except Exception:
+                # Si la función falla en un punto, por ejemplo 1 / 0,
+                # no conectamos la parte anterior con la siguiente.
+                prev = None
                 x += step
                 continue
-    
-            # primera iteración solo guarda punto
-            if first:
-                self.plot(x, y, color=color, scale=scale)
-                prev_x = x
-                prev_y = y
-                first = False
+
+            sx, sy = self._to_screen(x, y, scale_x, scale_y)
+
+            # Solo dibujamos y conectamos puntos visibles.
+            if 0 <= sx < self.width and 0 <= sy < self.height:
+                if prev is not None:
+                    self._thick_line(prev[0], prev[1], sx, sy, color, thickness)
+
+                prev = (sx, sy)
             else:
-                # conectamos puntos para que no quede discontinuo
-                self.line(
-                    int(prev_x * scale + self.width // 2),
-                    int(self.height // 2 - prev_y * scale),
-                    int(x * scale + self.width // 2),
-                    int(self.height // 2 - y * scale),
-                    color
-                )
-    
-                prev_x = x
-                prev_y = y
-    
-            x += step
+                prev = None
+
+            x += step   
 
 # -----------------------
 
