@@ -72,3 +72,31 @@
     </tr>
   </table>
 </div>
+
+<h3>ESP32 S3 WROOM-1 Datasheet:</h3>
+<div align="center">
+    <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-S3%2016MB%20PSRAM%208MB/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf" target="_blank">
+      <img src="esp32-s3-wroom-1_wroom-1u_datasheet_en.webp" width="100%">
+    </a>
+</div>
+
+<h3>ESP32 S3 Series Datasheet:</h3>
+<div align="center">
+    <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-S3%2016MB%20PSRAM%208MB/esp32-s3_datasheet_en.pdf" target="_blank">
+      <img src="esp32-s3_datasheet_en.webp" width="100%">
+    </a>
+</div>
+
+<h3>ESP32 S3 Technical Reference Manual:</h3>
+<div align="center">
+    <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-S3%2016MB%20PSRAM%208MB/esp32-s3_technical_reference_manual_en.pdf" target="_blank">
+      <img src="esp32-s3_technical_reference_manual_en.webp" width="100%">
+    </a>
+</div>
+
+<h3>ESP32 S3 Hardware Design Guidelines:</h3>
+<div align="center">
+    <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-S3%2016MB%20PSRAM%208MB/esp-hardware-design-guidelines-en-master-esp32s3.pdf" target="_blank">
+      <img src="esp-hardware-design-guidelines-en-master-esp32s3.webp" width="100%">
+    </a>
+</div>
