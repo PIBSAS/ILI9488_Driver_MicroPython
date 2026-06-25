@@ -1447,7 +1447,7 @@ class driver:
 
     # -----------------------
     
-    def fill_ring(xc, yc, rx, ry, width, color):
+    def fill_ring(self, xc, yc, rx, ry, width, color):
         rx_out = rx + width
         ry_out = ry + width
     
@@ -1473,7 +1473,7 @@ class driver:
                     x_in = int(rx * sqrt(value_in))
     
                     # Segmento izquierdo del aro
-                    lcd.hline(
+                    self.hline(
                         xc - x_out,
                         y,
                         x_out - x_in + 1,
@@ -1481,7 +1481,7 @@ class driver:
                     )
     
                     # Segmento derecho del aro
-                    lcd.hline(
+                    self.hline(
                         xc + x_in,
                         y,
                         x_out - x_in + 1,
@@ -1491,13 +1491,12 @@ class driver:
             else:
                 # Arriba y abajo del hueco interior:
                 # toda la fila pertenece al aro.
-                lcd.hline(
+                self.hline(
                     xc - x_out,
                     y,
                     2 * x_out + 1,
                     color
                 )
-
     # -----------------------
     
     def axes(self, origin_color=0xFFFF, tick_color=0xFFFF, axis_color=0xFFFF, center_dot=True, scale_x=10, scale_y=10, tick_size=6):
