@@ -72,3 +72,24 @@
     </tr>
   </table>
 </div>
+
+<h3>ESP32 S3 Series Datasheet:</h3>
+<div align="left">
+    <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-S3%2016MB%20PSRAM%208MB/esp32-s3_datasheet_en.pdf" target="_blank">
+      <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-S3%2016MB%20PSRAM%208MB/esp32-s3_datasheet_en.webp" width="40%">
+    </a>
+</div>
+
+<h3>ESP32 S3 Technical Reference Manual:</h3>
+<div align="left">
+    <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-S3%2016MB%20PSRAM%208MB/esp32-s3_technical_reference_manual_en.pdf" target="_blank">
+      <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-S3%2016MB%20PSRAM%208MB/esp32-s3_technical_reference_manual_en.webp" width="40%">
+    </a>
+</div>
+
+<h3>ESP32 S3 Hardware Design Guidelines:</h3>
+<div align="left">
+    <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-S3%2016MB%20PSRAM%208MB/esp-hardware-design-guidelines-en-master-esp32s3.pdf" target="_blank">
+      <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-S3%2016MB%20PSRAM%208MB/esp-hardware-design-guidelines-en-master-esp32s3.webp" width="40%">
+    </a>
+</div>
