@@ -9,21 +9,26 @@ lcd.fill(0x2378)   # opcional: limpiar fondo de pantalla
 x_min = -(lcd.width//2)
 x_max = lcd.width//2
 
-SCALE_X = 30
-SCALE_Y = 50
+lcd.set_scale(10, 10)
 
-lcd.axes(Color.CYAN, Color.WHITE,axis_color=Color.WHITE,scale_x=SCALE_X, scale_y=SCALE_Y)
+lcd.axes(Color.CYAN, Color.WHITE,axis_color=Color.WHITE)
+A = (0, 0)
+B = (6, 8)
 
+lcd.line_points(A, B,thickness=2)
+lcd.plot(6,8,thickness=8)
 
-lcd.plot(2,3,color=Color.WHITE, scale_x=SCALE_X, scale_y=SCALE_Y, thickness=5)
-
+lcd.line_points((2,5), (3,2), thickness=3)
+E=(3,4)
+D=(-2,-3)
+lcd.line_points(E, D)
+lcd.plot(2,3,color=Color.WHITE, thickness=5)
+lcd.plot_function(lambda x: x*x*x*x -3*x*x + 2, x_min,x_max+1, color=Color.YELLOW,thickness=3)
 lcd.plot_function(
     lambda x: math.sin(x),
     x_min,
     x_max,
     color=0x07E0,
-    scale_x=SCALE_X,
-    scale_y=SCALE_Y,
     thickness=2
 )
 lcd.plot_function(
@@ -31,8 +36,6 @@ lcd.plot_function(
     x_min,
     x_max,
     color=0x780F,
-    scale_x=SCALE_X,
-    scale_y=SCALE_Y,
     thickness=2
 )
 lcd.plot_function(
@@ -40,8 +43,6 @@ lcd.plot_function(
     x_min,
     x_max,
     color=0xAFE5,
-    scale_x=SCALE_X,
-    scale_y=SCALE_Y,
     thickness=2
 )
 lcd.plot_function(
@@ -49,8 +50,6 @@ lcd.plot_function(
     x_min,
     x_max,
     color=0x03EF,
-    scale_x=SCALE_X,
-    scale_y=SCALE_Y,
     thickness=2
 )
 lcd.plot_function(
@@ -58,8 +57,6 @@ lcd.plot_function(
     x_min,
     x_max,
     color=0xFEB4,
-    scale_x=SCALE_X,
-    scale_y=SCALE_Y,
     thickness=3
 )
 lcd.plot_function(
@@ -67,8 +64,6 @@ lcd.plot_function(
     x_min,
     x_max,
     color=0xF643,
-    scale_x=SCALE_X,
-    scale_y=SCALE_Y,
     thickness=3
 )
 lcd.plot_function(
@@ -76,8 +71,6 @@ lcd.plot_function(
     x_min,
     x_max,
     color=0xA100,
-    scale_x=SCALE_X,
-    scale_y=SCALE_Y,
     thickness=3
 )
 lcd.plot_function(
@@ -85,7 +78,5 @@ lcd.plot_function(
     x_min,
     x_max,
     color=0x03E9,
-    scale_x=SCALE_X,
-    scale_y=SCALE_Y,
     thickness=3
 )
