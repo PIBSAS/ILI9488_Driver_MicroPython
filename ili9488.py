@@ -1500,12 +1500,13 @@ class driver:
 
     # -----------------------
     
-    def axes(self, color=0xFFFF, axis_color=0xFFFF, center_dot=True, scale_x=10, scale_y=10, tick_size=6):
+    def axes(self, origin_color=0xFFFF, tick_color=0xFFFF, axis_color=0xFFFF, center_dot=True, scale_x=10, scale_y=10, tick_size=6):
         """
         Dibuja ejes cartesianos completos (X e Y) centrados en pantalla.
         Funciona con cualquier rotación porque usa lcd.width y lcd.height.
-        
-        color: color general de líneas
+
+        origin_color: color del origen de coordenadas
+        tick_color: color general de los ticks
         axis_color: color de los ejes principales
         center_dot: marca el origen
         scale_x: Unidad matematica 1 = 10 px
@@ -1515,47 +1516,42 @@ class driver:
     
         w = self.width
         h = self.height
-    
+
         cx = w // 2
         cy = h // 2
-    
-        # Fondo opcional (si querés limpiar antes)
-        # self.fill_rect(0, 0, w, h, 0x0000)
-    
-        # EJE X (horizontal)
+
+        # Ejes principales
         self.hline(0, cy, w, axis_color)
-    
-        # EJE Y (vertical)
         self.vline(cx, 0, h, axis_color)
-    
-        # Marcar origen
+
+        # Origen
         if center_dot:
-            self.fill_circle(cx, cy, 2, color)
-    
-         # Ticks del eje X:
+            self.fill_circle(cx, cy, 2, origin_color)
+
+        # Ticks del eje X:
         # cada tick está separado scale_x píxeles,
         # o sea, representa 1 unidad en X.
         x = cx + scale_x
         while x < w:
-            self.vline(x, cy - tick_size//2, tick_size, color)
+            self.vline(x, cy - tick_size//2, tick_size, tick_color)
             x += scale_x
 
         x = cx - scale_x
         while x >= 0:
-            self.vline(x, cy - tick_size//2, tick_size, color)
+            self.vline(x, cy - tick_size//2, tick_size, tick_color)
             x -= scale_x
-        
+
         # Ticks del eje Y:
         # cada tick está separado scale_y píxeles,
         # o sea, representa 1 unidad en Y.
         y = cy + scale_y
         while y < h:
-            self.hline(cx - tick_size//2, y, tick_size, color)
+            self.hline(cx - tick_size//2, y, tick_size, tick_color)
             y += scale_y
 
         y = cy - scale_y
         while y >= 0:
-            self.hline(cx - tick_size//2, y, tick_size, color)
+            self.hline(cx - tick_size//2, y, tick_size, tick_color)
             y -= scale_y
 
     # -----------------------
