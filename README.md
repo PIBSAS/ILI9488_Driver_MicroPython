@@ -577,7 +577,19 @@ fill_ring(xc, yc, rx, ry, width, color)
 <h3>Plot axes with 4 quadrants</h3>
 
 ````python
-axes(scolor=0xFFFF, axis_color=0xFFFF, center_dot=True)
+axes(origin_color=0xFFFF, tick_color=0xFFFF, axis_color=0xFFFF, center_dot=True, scale_x=10, scale_y=10, tick_size=6
+````
+
+<h3>Plot a point</h3>
+
+````python
+plot(x, y, color=0xFFFF, scale_x=10, scale_y=10, thickness=1)
+````
+
+<h3>Plot a function</h3>
+
+````python
+plot_function(func, x_min, x_max, step=0.05, color=0xFFFF, scale_x=10, scale_y=10, thickness=1)
 ````
 
 <h3>Draw image buffer at x,y position:</h3>
@@ -619,6 +631,26 @@ bmp(filename, x=0, y=0, mode=None)
 
 ````python
 Color.rgb(r, g, b)
+````
+
+<h3>Draw a filled ring</h3>
+
+````python
+fill_ring(xc, yc, rx, ry, width, color)
+````
+
+<h3>Get lcd width</h3>
+
+````python
+lcd = set_display.setting(0)
+print(lcd.width)
+````
+
+<h3>Get LCD height</h3>
+
+````python
+lcd = set_display.setting(0)
+print(lcd.height)
 ````
 
 ----
