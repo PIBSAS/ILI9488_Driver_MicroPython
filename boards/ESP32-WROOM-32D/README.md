@@ -72,3 +72,25 @@
     </tr>
   </table>
 </div>
+
+<h3>ESP32 WROOM-32D Datasheet:</h3>
+<div align="left">
+    <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32-WROOM-32D/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" target="_blank">
+      <img src="esp32-wroom-32d_esp32-wroom-32u_datasheet_en.webp" width="40%">
+    </a>
+</div>
+
+<h3>ESP32 Series Datasheet:</h3>
+<div align="left">
+    <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32%20WROOM%2032/esp32_datasheet_en.pdf" target="_blank">
+      <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32%20WROOM%2032/esp32_datasheet_en.webp" width="40%">
+    </a>
+</div>
+
+<h3>ESP32 Technical Reference Manual:</h3>
+<div align="left">
+    <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32%20WROOM%2032/esp32_technical_reference_manual_en.pdf" target="_blank">
+      <img src="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/ESP32%20WROOM%2032/esp32_technical_reference_manual_en.webp" width="40%">
+    </a>
+</div>
+
