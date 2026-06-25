@@ -51,8 +51,9 @@
 |---------------|-----------------|---------------|----------|
 | SD_CS         |	HSPICS0	        | 23	          | GPIO 15  |
 | SD_MOSI	      | HSPID           | 15	          | GPIO 13  |
-| SD_SCK        | GPIO 33         |  8	          | GPIO 33  |
 | SD_MISO       |	HSPICLK         | 12	          | GPIO 14  |
+| SD_SCK        | GPIO 33         |  8	          | GPIO 33  |
+
 
 ----
 
