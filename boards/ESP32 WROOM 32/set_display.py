@@ -4,10 +4,10 @@ from ili9488 import driver
 SPI_ID = 2
 SPI_BAUDRATE = 40000000
 
-PIN_SCK  = 18 # VSPICLK
-PIN_MOSI = 23 # VSPID
-PIN_MISO = 19 # VSPIQ
 PIN_CS   = 5  # VSPICS0
+PIN_MOSI = 23 # VSPID
+PIN_SCK  = 18 # VSPICLK
+PIN_MISO = 19 # VSPIQ
 
 PIN_DC   = 25
 PIN_RST  = 26
@@ -15,8 +15,8 @@ PIN_BL   = 27 # Backlight (opcional if not 3V3 Pin available)
 
 # SD Pins
 SD_CS   = 15 # HSPICS0
-SD_MISO = 12 # HSPIQ
 SD_MOSI = 13 # HSPID
+SD_MISO = 12 # HSPIQ
 SD_SCK  = 14 # HSPICLK
 
 MOUNT_POINT = "/sd"
