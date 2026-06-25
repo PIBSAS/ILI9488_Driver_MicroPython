@@ -30,6 +30,9 @@ class driver:
 
         self.width = TFT_WIDTH
         self.height = TFT_HEIGHT
+
+        self.scale_x = 10
+        self.scale_y = 10
         
         # Buffer reutilizable para fill_rect()
         self._fillbuf = bytearray(768)  # 256 píxeles RGB666
@@ -229,6 +232,12 @@ class driver:
             b & 0xFC
         ])
 
+    # -------------------------
+
+    def set_scale(self, scale_x, scale_y):
+        self.scale_x = scale_x
+        self.scale_y = scale_y
+    
     # -------------------------
     """
     def fill(self, color):
@@ -1446,6 +1455,20 @@ class driver:
             )
 
     # -----------------------
+
+    def _to_screen(self, x, y):
+        """
+        Convierte coordenadas cartesianas a píxeles de pantalla.
+
+        Por defecto:
+            1 unidad matemática = 10 píxeles.
+        """
+        sx = self.width // 2 + int(x * self.scale_x)
+        sy = self.height // 2 - int(y * self.scale_y)
+
+        return sx, sy
+
+    # -----------------------
     
     def fill_ring(self, xc, yc, rx, ry, width, color):
         rx_out = rx + width
@@ -1498,8 +1521,8 @@ class driver:
                     color
                 )
     # -----------------------
-    
-    def axes(self, origin_color=0xFFFF, tick_color=0xFFFF, axis_color=0xFFFF, center_dot=True, scale_x=10, scale_y=10, tick_size=6):
+
+    def axes(self, origin_color=0xFFFF, tick_color=0xFFFF, axis_color=0xFFFF, center_dot=True, tick_size=6):
         """
         Dibuja ejes cartesianos completos (X e Y) centrados en pantalla.
         Funciona con cualquier rotación porque usa lcd.width y lcd.height.
@@ -1508,11 +1531,9 @@ class driver:
         tick_color: color general de los ticks
         axis_color: color de los ejes principales
         center_dot: marca el origen
-        scale_x: Unidad matematica 1 = 10 px
-        scale_y: Unidad matematica 1 = 10 px
         tick_size: Tamaño del tick 6px
         """
-    
+
         w = self.width
         h = self.height
 
@@ -1530,45 +1551,28 @@ class driver:
         # Ticks del eje X:
         # cada tick está separado scale_x píxeles,
         # o sea, representa 1 unidad en X.
-        x = cx + scale_x
+        x = cx + self.scale_x
         while x < w:
             self.vline(x, cy - tick_size//2, tick_size, tick_color)
-            x += scale_x
+            x += self.scale_x
 
-        x = cx - scale_x
+        x = cx - self.scale_x
         while x >= 0:
             self.vline(x, cy - tick_size//2, tick_size, tick_color)
-            x -= scale_x
+            x -= self.scale_x
 
         # Ticks del eje Y:
         # cada tick está separado scale_y píxeles,
         # o sea, representa 1 unidad en Y.
-        y = cy + scale_y
+        y = cy + self.scale_y
         while y < h:
             self.hline(cx - tick_size//2, y, tick_size, tick_color)
-            y += scale_y
+            y += self.scale_y
 
-        y = cy - scale_y
+        y = cy - self.scale_y
         while y >= 0:
             self.hline(cx - tick_size//2, y, tick_size, tick_color)
-            y -= scale_y
-
-    # -----------------------
-
-    def _to_screen(self, x, y, scale_x=10, scale_y=10):
-        """
-        Convierte coordenadas cartesianas a píxeles de pantalla.
-
-        Por defecto:
-            1 unidad matemática = 10 píxeles.
-        """
-        cx = self.width // 2
-        cy = self.height // 2
-
-        sx = cx + int(x * scale_x)
-        sy = cy - int(y * scale_y)
-
-        return sx, sy
+            y -= self.scale_y
 
     # ----------------------
 
@@ -1616,7 +1620,7 @@ class driver:
     
     # ----------------------
 
-    def plot(self, x, y, color=0xFFFF, scale_x=10, scale_y=10, thickness=1):
+    def plot(self, x, y, color=0xFFFF, thickness=1):
         """
         Dibuja un punto en coordenadas cartesianas.
 
@@ -1628,19 +1632,16 @@ class driver:
             30 px arriba
         del origen.
         """
-        sx, sy = self._to_screen(x, y, scale_x, scale_y)
+        sx, sy = self._to_screen(x, y)
 
         if 0 <= sx < self.width and 0 <= sy < self.height:
             self._thick_pixel(sx, sy, color, thickness)
-
+    
     # -----------------------
 
-    def plot_function(self, func, x_min, x_max, step=0.05, color=0xFFFF, scale_x=10, scale_y=10, thickness=1):
+    def plot_function(self, func, x_min, x_max, step=0.05, color=0xFFFF, thickness=1):
         """
         Grafica y = func(x).
-
-        scale_x y scale_y indican cuántos píxeles representa
-        una unidad matemática en cada eje.
         """
 
         prev = None
@@ -1657,7 +1658,7 @@ class driver:
                 x += step
                 continue
 
-            sx, sy = self._to_screen(x, y, scale_x, scale_y)
+            sx, sy = self._to_screen(x, y)
 
             # Solo dibujamos y conectamos puntos visibles.
             if 0 <= sx < self.width and 0 <= sy < self.height:
@@ -1669,6 +1670,14 @@ class driver:
                 prev = None
 
             x += step   
+
+    # -------------------
+
+    def line_points(self, A, B, color=0xFFFF, thickness=1):
+        x0, y0 = self._to_screen(A[0], A[1])
+        x1, y1 = self._to_screen(B[0], B[1])
+
+        self._thick_line(x0, y0, x1, y1, color, thickness)
 
 # -----------------------
 
