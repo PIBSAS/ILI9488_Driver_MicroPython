@@ -17,7 +17,7 @@ PIN_BL   = 27 # Backlight (opcional if not 3V3 Pin available)
 # SD Pins
 SD_CS   = 15 # HSPICS0
 SD_MOSI = 13 # HSPID
-SD_MISO = 12 # HSPIQ
+SD_MISO = 33 # HSPIQ GPIO12 its strapping pin so remap to GPIO 33
 SD_SCK  = 14 # HSPICLK
 
 MOUNT_POINT = "/sd"
