@@ -470,13 +470,17 @@ ellipse(xc, yc, rx, ry, color)
 fill_ellipse(xc, yc, rx, ry, color)
 ````
 
-
 <h3>Draw a line, horizontal, vertical or diagonal:</h3>
 
 ````python
 line(x0, y0, x1, y1, color)
 ````
 
+<h3>Plot a segmments given two points</h3>
+
+````python
+line_points(A, B, color=0xFFFF, thickness=1)
+````
 
 <h3>Draw an horizontal line:</h3>
 
@@ -577,19 +581,19 @@ fill_ring(xc, yc, rx, ry, width, color)
 <h3>Plot axes with 4 quadrants</h3>
 
 ````python
-axes(origin_color=0xFFFF, tick_color=0xFFFF, axis_color=0xFFFF, center_dot=True, scale_x=10, scale_y=10, tick_size=6
+axes(origin_color=0xFFFF, tick_color=0xFFFF, axis_color=0xFFFF, center_dot=True, tick_size=6)
 ````
 
 <h3>Plot a point</h3>
 
 ````python
-plot(x, y, color=0xFFFF, scale_x=10, scale_y=10, thickness=1)
+plot(x, y, color=0xFFFF, thickness=1)
 ````
 
 <h3>Plot a function</h3>
 
 ````python
-plot_function(func, x_min, x_max, step=0.05, color=0xFFFF, scale_x=10, scale_y=10, thickness=1)
+plot_function(func, x_min, x_max, step=0.05, color=0xFFFF, thickness=1)
 ````
 
 <h3>Draw image buffer at x,y position:</h3>
