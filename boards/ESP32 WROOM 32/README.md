@@ -20,7 +20,7 @@
 
 | Nombre normal |	Nombre en tabla	| Pin (No.)   	| Pin Name |
 |---------------|-----------------|---------------|----------|
-| CS/SS         |	VSPI SS	        | 23	          | GPIO  5  |
+| CS/SS         |	VSPI CS	        | 23	          | GPIO  5  |
 | MOSI/SDA/SDI	| VSPI MOSI       | 30	          | GPIO 23  |
 | SCK/CLK	      | VSPI SCK        | 24	          | GPIO 18  |
 | MISO/SDO      |	VSPI MISO       | 25	          | GPIO 19  |
@@ -35,11 +35,24 @@
 | LED           | ----------------| 10                | GPIO 27  |
 | SCK/CLK	      | VSPI SCK        | 24	              | GPIO 18  |
 | SDI/MOSI/SDA	| VSPI MOSI	      | 30	              | GPIO 23  |
-| DC/RS         | ----------------| 12                | GPIO 12  |
-| RESET         | ----------------| 11                | GPIO 14  |
-| CS/SS         |	VSPI SS	        | 23	              | GPIO  5  |
+| DC/RS         | ----------------|  8                | GPIO 25  |
+| RESET         | ----------------|  9                | GPIO 26  |
+| CS/SS         |	VSPI CS	        | 23	              | GPIO  5  |
 | GND           | GND             | 14                | GND      |
 | VCC           | 3V3             | 16                | 3V3      |
+
+----
+
+# SPI SD with MicroPython SDCard Class Pinout:
+
+----
+
+| Nombre normal |	Nombre en tabla	| Pin (No.)   	| Pin Name |
+|---------------|-----------------|---------------|----------|
+| SD_CS         |	HSPI CS	        | 18	          | GPIO 15  |
+| SD_MOSI	      | HSPI MOSI       | 13	          | GPIO 13  |
+| SD_MISO       |	GPIO 33         | 7 	          | GPIO 33  |
+| SD_SCK        | HSPI CLK        | 11	          | GPIO 14  |
 
 ----
 
