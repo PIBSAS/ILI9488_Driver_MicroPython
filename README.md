@@ -657,6 +657,13 @@ lcd = set_display.setting(0)
 print(lcd.height)
 ````
 
+<h3>Set Scale</h3>
+
+````python
+lcd = set_display.setting(0)
+lcd.set_scale(scale_x, scale_y)
+````
+
 ----
 
 <h2>Display's manual</h2>
