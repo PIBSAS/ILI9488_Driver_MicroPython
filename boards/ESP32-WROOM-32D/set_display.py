@@ -5,21 +5,20 @@ import os
 SPI_ID = 1
 SPI_BAUDRATE = 40000000
 
-PIN_SCK  = 14
-PIN_MOSI = 13
-PIN_MISO = 12
+PIN_CS   = 15 # HSPICS0
+PIN_MOSI = 13 # HSPID
+PIN_SCK  = 14 # HSPICLK
+PIN_MISO = 33 # HSPIQ GPIO12 its strapping pin so remap to GPIO 33
 
-PIN_CS   = 15
 PIN_DC   = 16
 PIN_RST  = 17
-# Backlight (opcional if not 3V3 Pin available)
-PIN_BL   = 4
+PIN_BL   = 4  # Backlight (opcional if not 3V3 Pin available)
 
 # SD Pins
-SD_CS   = 5
-SD_MISO = 19
-SD_MOSI = 23
-SD_SCK  = 18
+SD_CS   = 5  # VSPICS0
+SD_MOSI = 23 # VSPID
+SD_MISO = 19 # VSPIQ
+SD_SCK  = 18 # VSPICLK
 
 MOUNT_POINT = "/sd"
 
