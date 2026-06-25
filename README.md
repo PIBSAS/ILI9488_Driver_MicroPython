@@ -138,8 +138,9 @@
 
 
 ````python
-from machine import SPI, Pin
+from machine import SPI, Pin, SDCard
 from ili9488 import driver
+import os
 
 SPI_ID = 1 # 2 on ESP32-S, ESP32-WROOM
 SPI_BAUDRATE = 40000000
@@ -152,6 +153,13 @@ PIN_CS   = YOUR_BOARD_SPI-CS_PIN
 PIN_DC   = YOUR_BOARD_ANY_GPIO_PIN
 PIN_RST  = YOUR_BOARD_ANY_GPIO_PIN
 PIN_BL   = YOUR_BOARD_ANY_GPIO_PIN OR 3V3 PIN # Backlight (optional if not 3V3 Pin available)
+
+SD_CS   = YOUR_BOARD_SD_CS_PIN
+SD_MISO = YOUR_BOARD_SD_MISO_PIN
+SD_MOSI = YOUR_BOARD_SD_MOSI_PIN
+SD_SCK  = YOUR_BOARD_SD_SCK_PIN
+
+MOUNT_POINT = "/sd"
 
 # DONT TOUCH THE REST:
 def setting(rotation=0):
@@ -176,6 +184,36 @@ def setting(rotation=0):
     display.set_rotation(rotation)
     
     return display
+
+def mount_sd():
+    sd = SDCard(
+        slot=2,
+        sck=SD_SCK,
+        mosi=SD_MOSI,
+        miso=SD_MISO,
+        cs=SD_CS
+    )
+    
+    try:
+        os.mount(sd, MOUNT_POINT)
+    except OSError:
+        pass
+    
+    return sd
+
+
+def files():
+    try:
+        return os.listdir(MOUNT_POINT)
+    except OSError:
+        return []
+
+
+def umount():
+    try:
+        os.umount(MOUNT_POINT)
+    except OSError:
+        pass
 ````
 
 ----
@@ -208,17 +246,30 @@ def setting(rotation=0):
 
 ````python
 from ili9488 import driver, Color # Class driver and Color
-import set_display # SPI Pins of your board
+import set_display # SPI Pins of your board and SD Pins
 import fonts.vga1_16x16 as font # Only if you're going to write
 
 # Set display connection and rotation 0=0º, 1=90º, 2=180ª, 3=270ª
-lcd = set_display.setting(0) 
+lcd = set_display.setting(0)
+
+# Optional set SD connection and mount point
+sd = set_display.mount_sd() 
 
 # Put a background color to the display or will be gray with scanlines
 lcd.fill(Color.WHITE)
 
 # Write text on screen
 lcd.text("Luciano's tech", 0, 10, Color.RED, font, Color.PCYAN)
+
+# SD basic usage
+print(set_display.files())
+
+fila = 0
+
+for archivo in set_display.files():
+    lcd.text(archivo, 0, fila, Color.WHITE,font, Color.RED)
+    fila += 18
+set_display.umount()
 ````
 
 ----
@@ -662,6 +713,20 @@ print(lcd.height)
 ````python
 lcd = set_display.setting(0)
 lcd.set_scale(scale_x, scale_y)
+````
+
+<h3>List all files on SD Card</h3>
+
+````python
+sd = set_display.mount_sd()
+set_display.files()
+````
+
+<h3>Umount SD Card</h3>
+
+````python
+sd = set_display.mount_sd()
+set_display.umount()
 ````
 
 ----
