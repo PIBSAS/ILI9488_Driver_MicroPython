@@ -1,5 +1,6 @@
 from machine import SPI, Pin, SDCard
 from ili9488 import driver
+import os
 
 SPI_ID = 2
 SPI_BAUDRATE = 40000000
