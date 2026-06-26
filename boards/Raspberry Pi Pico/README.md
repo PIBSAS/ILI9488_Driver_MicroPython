@@ -59,3 +59,10 @@
     </tr>
   </table>
 </div>
+
+<h3>Raspberry Pi Pico Datasheet:</h3>
+<div align="left">
+    <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/Raspberry%20Pi%20Pico/pico-datasheet.pdf" target="_blank">
+      <img src="pico-datasheet.webp" width="40%">
+    </a>
+</div>
