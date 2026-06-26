@@ -58,3 +58,10 @@
     </tr>
   </table>
 </div>
+
+<h3>RP2040 Datasheet:</h3>
+<div align="left">
+    <a href="https://github.com/PIBSAS/ILI9488_Driver_MicroPython/blob/main/boards/RP2040%2016%20MB/rp2040-datasheet.pdf" target="_blank">
+      <img src="rp2040-datasheet.webp" width="40%">
+    </a>
+</div>
