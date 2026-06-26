@@ -527,7 +527,7 @@ fill_ellipse(xc, yc, rx, ry, color)
 line(x0, y0, x1, y1, color)
 ````
 
-<h3>Plot a segmments given two points</h3>
+<h3>Plot a segmments given two points:</h3>
 
 ````python
 line_points(A, B, color=0xFFFF, thickness=1)
@@ -623,25 +623,25 @@ circle(xc, yc, radius, color)
 fill_circle(xc, yc, radius, color)
 ````
 
-<h3>Draw a filled ring</h3>
+<h3>Draw a filled ring:</h3>
 
 ````python
 fill_ring(xc, yc, rx, ry, width, color)
 ````
 
-<h3>Plot axes with 4 quadrants</h3>
+<h3>Plot axes with 4 quadrants:</h3>
 
 ````python
 axes(origin_color=0xFFFF, tick_color=0xFFFF, axis_color=0xFFFF, center_dot=True, tick_size=6)
 ````
 
-<h3>Plot a point</h3>
+<h3>Plot a point:</h3>
 
 ````python
 plot(x, y, color=0xFFFF, thickness=1)
 ````
 
-<h3>Plot a function</h3>
+<h3>Plot a function:</h3>
 
 ````python
 plot_function(func, x_min, x_max, step=0.05, color=0xFFFF, thickness=1)
@@ -688,41 +688,35 @@ bmp(filename, x=0, y=0, mode=None)
 Color.rgb(r, g, b)
 ````
 
-<h3>Draw a filled ring</h3>
-
-````python
-fill_ring(xc, yc, rx, ry, width, color)
-````
-
-<h3>Get lcd width</h3>
+<h3>Get lcd width:</h3>
 
 ````python
 lcd = set_display.setting(0)
 print(lcd.width)
 ````
 
-<h3>Get LCD height</h3>
+<h3>Get LCD height:</h3>
 
 ````python
 lcd = set_display.setting(0)
 print(lcd.height)
 ````
 
-<h3>Set Scale</h3>
+<h3>Set Scale:</h3>
 
 ````python
 lcd = set_display.setting(0)
 lcd.set_scale(scale_x, scale_y)
 ````
 
-<h3>List all files on SD Card</h3>
+<h3>List all files on SD Card:</h3>
 
 ````python
 sd = set_display.mount_sd()
 set_display.files()
 ````
 
-<h3>Umount SD Card</h3>
+<h3>Umount SD Card:</h3>
 
 ````python
 sd = set_display.mount_sd()
