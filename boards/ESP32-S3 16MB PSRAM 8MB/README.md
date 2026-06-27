@@ -1,4 +1,4 @@
-# ESP32 S3 WROOM-1 16MB PSRAM 8MB Pinout:
+# ESP32 S3 WROOM-1 N16R8 16MB PSRAM 8MB Pinout:
 
 <div align="center">
   <img src="ESP32-S3-16MB-PSRAM-8MB.png" alt="ESP32 S3 WROOM-1 16MB PSRAM 8MB">
