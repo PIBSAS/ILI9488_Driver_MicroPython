@@ -838,7 +838,7 @@ set_display.umount()
   <ul>
     <li><a href="https://sites.google.com/view/lucianostech/yd-rp2040-16mb" target="_blank">YD-RP2040 16MB</a></li>
   </ul>
-  <img src="boards/RP2040 16 MB/YD-RP2040 16MB.png" alt="YD-RP2040 16MB" width="403" height="752">
+  <img src="boards/RP2040 16 MB/YD-RP2040 16MB.png" alt="YD-RP2040 16MB" width="262" height="899">
 </div>
 
 ----
